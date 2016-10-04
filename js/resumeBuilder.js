@@ -4,14 +4,14 @@ var bio = {
   "contacts" : {
   "mobile" : "571-271-5709",
   "email" : "jasierra.garcia@gmail.com",
-  "github" : "https://github.com/jasierragarcia",
+  "github" : "jasierragarcia",
   "linkedin" : "https://www.linkedin.com/in/juan-a-sierra-g-368b84100",
   "twitter" : "@jasierra.garcia",
   "location" : "Loundoun, VA"
   },
   "welcomeMessage" : "Thank you for visiting!",
   "skills" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Git"],
-  "biopic" : "images/me.png"
+  "bioPic" : "images/me.png"
 };
 
 var education = {
@@ -28,7 +28,7 @@ var education = {
       "name" : "Tuscarora High School",
       "location" : "Leesburg, VA",
       "degree" : "GED",
-      "majors" : "",
+      "majors" : "GED",
       "dates" : "August 2010 - June 2013",
       "url" : "https://www.nvcc.edu/"
     },
@@ -36,7 +36,7 @@ var education = {
       "name" : "Heritage High School",
       "location" : "Leesburg, VA",
       "degree" : "",
-      "majors" : "",
+      "majors" : "N/A",
       "dates" : "August 2009 - June 2010",
       "url" : "http://www.loudoun.k12.va.us/hhs"
     }
@@ -96,13 +96,109 @@ var projects = {
       "title" : "Portfolio Site Project",
       "dates" : "September 2016",
       "description" : "From mockup design, to coded website.",
-      "images" : "images/portfolio-project.png"
+      "images" : "images/portfolio-project.png",
+      "URL" : "http://jasierragarcia.github.io/portfolio-site-project",
+      "repo" : "https://github.com/jasierragarcia/portfolio-site-project"
     },
     {
       "title" : "Animal Trading Cards",
       "dates" : "July 2016",
       "description" : "Learning HTML and CSS.",
-      "images" : "images/card.png"
+      "images" : "images/card.png",
+      "URL" : "https://jasierragarcia.github.io/Animal-Trading-Cards/",
+      "repo" : "https://github.com/jasierragarcia/Animal-Trading-Cards"
     }
   ]
 };
+
+// bio
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+var formattedPic = HTMLbioPic.replace("%data%", bio.bioPic);
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+$("#header").append(formattedMessage);
+$("#header").append(formattedPic);
+
+if (bio.skills.length > 0) {
+  $("#header").append(HTMLskillsStart);
+
+  for (var i = 0; i < bio.skills.length; i++) {
+    var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
+    $("#skills").append(formattedSkills);
+  }
+}
+//
+
+// work
+work.display = function () {
+  $("#workExperience").append(HTMLworkStart);
+  for (key in work.jobs) {
+
+    var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[key].employer);
+    var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[key].title);
+    var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[key].location);
+    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[key].dates);
+    var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[key].description);
+
+
+    $(".work-entry").append(formattedEmployer + formattedTitle);
+    $(".work-entry").append(formattedDates + formattedLocation);
+    $(".work-entry").append(formattedDescription);
+
+  }
+};
+work.display();
+
+// projects
+function displayProjects(p) {
+  $("#projects").append(HTMLprojectStart);
+  for(key in p) {
+    var formattedTitle = HTMLprojectTitle.replace("%data%", p[key].title);
+    var formattedDate = HTMLprojectDates.replace("%data%", p[key].dates);
+    var formattedDescription = HTMLprojectDescription.replace("%data%", p[key].description);
+    var formattedImage = HTMLprojectImage.replace("%data%", p[key].images);
+
+    $(".project-entry").append(formattedTitle);
+    $(".project-entry").append(formattedDate);
+    $(".project-entry").append(formattedDescription);
+    $(".project-entry").append(formattedImage);
+  }
+}
+
+displayProjects(projects.projects);
+
+// education
+education.display = function () {
+  $("#education").append(HTMLschoolStart);
+  for (var i = 0; i < education.schools.length; i++) {
+    var formattedSchool = HTMLschoolName.replace("%data%", education.schools[i].name);
+    var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
+    var formattedDate = HTMLschoolDates.replace("%data%", education.schools[i].dates);
+    var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[i].majors);
+
+    $(".education-entry").append(formattedSchool);
+    $(".education-entry").append(formattedDate + formattedLocation);
+    $(".education-entry").append(formattedMajor);
+  }
+
+  // onlineCourses
+  if (education.onlineCourses.length > 0) {
+    $("#education").append(HTMLonlineClasses);
+    for (var i = 0; i < education.onlineCourses.length; i++) {
+      var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+      var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+      var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
+      var formattedUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
+
+      $("#education").append(formattedTitle + formattedSchool);
+      $("#education").append(formattedDate);
+      $("#education").append(formattedUrl);
+    }
+  }
+
+};
+
+education.display();
