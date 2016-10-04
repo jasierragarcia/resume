@@ -167,6 +167,12 @@ img {
   padding: 10px;
 }
 
+/* project images */
+
+#projects img {
+  max-width: 50%;
+}
+
 span {
   padding: 5px;
 }
