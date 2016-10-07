@@ -24,9 +24,59 @@ h6 {
   padding: 0 5%;
 }
 
+#name {
+  font-family: 'Raleway', sans-serif;
+}
+
+#role {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+#header, #name, #role {
+  padding-top: 25em;
+}
+
+/* divider */
+hr {
+  border-style: none;
+  background-color: #fff;
+  height: 2px;
+  border-radius: 1px;
+  width: 0;
+}
+
+/* workExperience div */
+
+#workExperience {
+  height: 75vh;
+}
+
+#workExperience {
+  padding-top: 15em;
+}
+
+/* scroll button */
+
+#scroll-btn {
+  margin: 0;
+  background-color: transparent;
+  font-size: 45px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #33363b;
+  margin-top: 10%;
+  margin-left: 48%;
+}
+
+.fa-arrow-down, .fa-arrow-up {
+  color: #33363b !important;
+}
+
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #fff;
   line-height: 48px;
   display: inline;
 }
@@ -93,14 +143,14 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  font-style: normal;
+  color: #fff;
   display: none;
 }
 
@@ -108,8 +158,23 @@ a {
   background-color: #f5ae23;
 }
 
-.orange-text {
-  color: #f5ae23;
+/* social icons styles */
+
+.fa {
+  color: #fff;
+  font-size: 100px;
+}
+
+.fa-github, .fa-envelope-o, .fa-linkedin {
+  font-size: 40px !important;
+}
+
+.fa:hover {
+  color: #33363b;
+}
+
+.white-text {
+  color: #fff;
 }
 
 .white-text {
@@ -129,7 +194,8 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #2098D1;
+  height: 50vh;
 }
 
 .flex-box {
@@ -177,14 +243,14 @@ span {
   padding: 5px;
 }
 
-#lets-connect {
+#footer {
   text-align: center;
 }
 
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
+  #footer {
     margin-top: 5%;
   }
 }
@@ -196,7 +262,7 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
+  #footer {
     margin-top: 10%;
   }
   .biopic {
