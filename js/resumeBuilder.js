@@ -167,6 +167,8 @@ work.display = function () {
     $("#work-entry").append(formattedDescription);
 
   }
+  var formattedButton = HTMLworkButton.replace("#", "#projects");
+  $(".scroll-down-w").append(formattedButton);
 };
 work.display();
 
@@ -185,8 +187,9 @@ function displayProjects(p) {
     $(".project-entry").append(formattedImage);
   }
 }
-
 displayProjects(projects.projects);
+var formattedPButton = HTMLprojectButton.replace("#", "#education");
+$(formattedPButton).append(".scroll-down-p");
 
 // education
 education.display = function () {
