@@ -10,7 +10,7 @@ var bio = {
   "location" : "San Pedro Sula, Honduras"
   },
   "welcomeMessage" : "Thank you for visiting!",
-  "skills" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Git", "Gulp"],
+  "skills" : ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Git", "Gulp", "Terminal (Linux/MacOS)", "Troubleshooting (Windows/MacOS)"],
   "bioPic" : "#"
 };
 
@@ -71,7 +71,7 @@ var work = {
       "title" : "Intern Junior Engineer / Contractor",
       "location" : "Leesburg, VA",
       "dates" : "June 2013 - Present",
-      "description" : "Collaborates with technology and engineering professionals to contribute to creation, development, and implementation of complex hardware and software systems. Branch out to contractor jobs, currently working as a Tech Support / Customer Service Rep. at Trapollo."
+      "description" : "Travels to customer sites to assist in network installation and IP phones setup, using skills learned during training such as: basic networking knowledge and troubleshooting. Branch out to contractor jobs, currently working as a Tech Support / Customer Service Rep. at Trapollo."
     },
     {
       "employer" : "FedBiz IT Solutions",
@@ -85,7 +85,7 @@ var work = {
       "title" : "Junior Analyst",
       "location" : "Leesburg, VA",
       "dates" : "September 2015 - February 2016",
-      "description" : "Update company data base with candidates' resumes for Government Job Requests."
+      "description" : "Update company database with incoming candidates' resumes for Government Job Requests."
     }
   ]
 };
@@ -117,11 +117,10 @@ var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var formattedPic = HTMLbioPic.replace("%data%", bio.bioPic);
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
+$("#name-role").append(formattedRole);
+$("#name-role").prepend(formattedName);
 
-
-// contact info / social
+// contact info - social
 var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 var formattedGit = HTMLgithub.replace("%data%", bio.contacts.github);
 var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
@@ -130,36 +129,31 @@ $("#topContacts").append(formattedEmail);
 $("#topContacts").append(formattedGit);
 $("#topContacts").append(formattedLinkedin);
 
-$("#header").append(HTMLscrollButtonDown);
+$(".scroll-down").append(HTMLscrollButtonDown.replace("#", "#workExperience-skills"));
 
 //$("#header").append(formattedMessage);
 //$("#header").append(formattedPic);
-
-/*
 if (bio.skills.length > 0) {
-  $("#header").append(HTMLskillsStart);
+  $("#skills-header").prepend(HTMLskillsStart);
   // skills
-  for (var i = 0; i < bio.skills.length; i++) {
-    var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-    $("#skills").append(formattedSkills);
-  }
+    var formattedSkills = HTMLskills.replace("%data%", bio.skills.join(", "));
+    $("#skills-entry").append(formattedSkills);
+
 
   // contactInfo
-  var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-  var formattedGit = HTMLgithub.replace("%data%", bio.contacts.github);
-  var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+  // var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+  // var formattedGit = HTMLgithub.replace("%data%", bio.contacts.github);
+  // var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 
-  $("#topContacts").append(formattedEmail);
-  $("#topContacts").append(formattedGit);
-  $("#topContacts").append(formattedTwitter);
+  // $("#topContacts").append(formattedEmail);
+  // $("#topContacts").append(formattedGit);
+  // $("#topContacts").append(formattedTwitter);
 }
-*/
 //
 
 // work
 work.display = function () {
-  $("#workExperience").append(HTMLworkStart);
-  $("#workExperience").append(HTMLscrollButtonDown);
+  $("#work-header").append(HTMLworkStart);
   for (key in work.jobs) {
 
     var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[key].employer);
@@ -168,10 +162,9 @@ work.display = function () {
     var formattedDates = HTMLworkDates.replace("%data%", work.jobs[key].dates);
     var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[key].description);
 
-
-    $(".work-entry").append(formattedEmployer + formattedTitle);
-    $(".work-entry").append(formattedDates + formattedLocation);
-    $(".work-entry").append(formattedDescription);
+    $("#work-entry").append(formattedEmployer + formattedTitle);
+    $("#work-entry").append(formattedDates + formattedLocation);
+    $("#work-entry").append(formattedDescription);
 
   }
 };
@@ -180,7 +173,6 @@ work.display();
 // projects
 function displayProjects(p) {
   $("#projects").append(HTMLprojectStart);
-  $("#projects").append(HTMLscrollButtonDown);
   for(key in p) {
     var formattedTitle = HTMLprojectTitle.replace("%data%", p[key].title);
     var formattedDate = HTMLprojectDates.replace("%data%", p[key].dates);
@@ -240,7 +232,7 @@ $("#mapDiv").append(googleMap);
 $(document).ready( function () {
 
   $("hr").animate({
-    width: "1300"
+    width: "100%"
   }, 1500, function () {
     // complete effect
   });
