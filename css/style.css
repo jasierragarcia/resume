@@ -32,10 +32,20 @@ h6 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #fff;
+  background-color: #33363b;
+  border-radius: 3px;
 }
 
-#header, #name, #role {
-  padding-top: 25em;
+/* name-role div */
+
+#name-role {
+  position: relative;
+  top: 45%;
+}
+
+#topContacts {
+  position: relative;
+  top: 45%;
 }
 
 /* divider */
@@ -47,31 +57,50 @@ hr {
   width: 0;
 }
 
-/* workExperience div */
+/* arrow down button */
 
-#workExperience {
-  height: 75vh;
+.scroll-down {
+  position: relative;
+  top: 60%;
+  text-align: center;
 }
 
-#workExperience {
-  padding-top: 15em;
+#scroll-btn-down {
+  font-size: 30px;
 }
 
-/* scroll button */
+/*
+.fa-arrow-down {
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+*/
 
-#scroll-btn {
-  margin: 0;
-  background-color: transparent;
-  font-size: 45px;
-  border-radius: 50px;
-  border-style: solid;
-  border-color: #33363b;
-  margin-top: 10%;
-  margin-left: 48%;
+/* work experience */
+#work-entry {
+  padding-left: 5%;
+  width: 90%;
 }
 
-.fa-arrow-down, .fa-arrow-up {
-  color: #33363b !important;
+/* skills */
+
+#skills-section {
+  padding-top: 5%;
+}
+
+#skills-h3 {
+  color: #999;
+}
+
+#skills-entry {
+  color: #333;
+  list-style: none;
+  position: relative;
+  padding-left: 5%;
+}
+
+#skills-entry li {
+  display: inline-block;
 }
 
 h1 {
@@ -148,12 +177,6 @@ a {
   line-height: 28px;
 }
 
-#skills-h3 {
-  font-style: normal;
-  color: #fff;
-  display: none;
-}
-
 .orange {
   background-color: #f5ae23;
 }
@@ -195,7 +218,7 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #2098D1;
-  height: 50vh;
+  height: 100vh;
 }
 
 .flex-box {
@@ -248,6 +271,12 @@ span {
 }
 
 /* Media queries to handle various device widths */
+
+@media only screen and (max-width: 530px) {
+  #role {
+    display: block;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   #footer {
