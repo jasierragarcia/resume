@@ -9,14 +9,14 @@ var HTMLgithub = '<li class="flex-item"><a href="%data%" class="social-icons" ta
 var HTMLlinkedin = '<li class="flex-item"><a href="%data%" class="social-icons" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
 var HTMLlocation = '<li class="flex-item"><span class="white-text">location</span><span class="white-text">%data%</span></li>';
 
-var HTMLscrollButtonDown = '<button id="scroll-btn"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>';
-var HTMLscrollButtonUp = '<button id="scroll-btnUp"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>';
+var HTMLscrollButtonDown = '<a href="#" id="scroll-btn-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>';
+var HTMLscrollButtonUp = '<a href="#" id="scroll-btn-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLskillsStart = '<h3 id="skills-h3">Skills</h3><ul id="skills" class="flex-column"></ul>';
+var HTMLskills = '<li class="flex-item"><span>%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
