@@ -69,6 +69,26 @@ hr {
   font-size: 30px;
 }
 
+.scroll-down-w {
+  text-align: center;
+}
+.work-btn {
+  color: #999 !important;
+}
+.work-btn:hover {
+  color: #1199c3 !important;
+}
+
+.scroll-down-p {
+  text-align: center;
+}
+.project-btn {
+  color: #999 !important;
+}
+.project-btn:hover {
+  color: #1199c3 !important;
+}
+
 /*
 .fa-arrow-down {
   border: 2px solid #fff;
@@ -259,7 +279,11 @@ img {
 /* project images */
 
 #projects img {
-  max-width: 50%;
+  max-width: 45%;
+}
+
+#projects {
+  display: inline-block;
 }
 
 span {
@@ -268,6 +292,11 @@ span {
 
 #footer {
   text-align: center;
+  height: 50px;
+}
+#credit {
+  color: #fff;
+  padding-top: 12px;
 }
 
 /* Media queries to handle various device widths */
@@ -300,6 +329,19 @@ span {
   .welcome-message {
     display: none;
   }
+}
+.contact-me {
+  width: 100%;
+}
+
+.contact-form {
+  width: 50%;
+  position: relative;
+  left: 60%;
+}
+
+.contact-form form {
+  top: 50%;
 }
 
 #map {
