@@ -9,7 +9,7 @@ var HTMLgithub = '<li class="flex-item"><a href="%data%" class="social-icons" ta
 var HTMLlinkedin = '<li class="flex-item"><a href="%data%" class="social-icons" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
 var HTMLlocation = '<li class="flex-item"><span class="white-text">location</span><span class="white-text">%data%</span></li>';
 
-var HTMLscrollButtonDown = '<a href="#" id="scroll-btn-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>';
+var HTMLscrollButtonDown = '<a href="#" id="scroll-btn-down"><i class="fa fa-arrow-down main-btn" aria-hidden="true"></i></a>';
 var HTMLscrollButtonUp = '<a href="#" id="scroll-btn-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
@@ -24,12 +24,14 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkButton = '<a href="#" id="scroll-btn-down"><i class="fa fa-arrow-down work-btn" aria-hidden="true"></i></a>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectButton = '<a href="#" id="scroll-btn-down"><i class="fa fa-arrow-down project-btn" aria-hidden="true"></i></a>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
