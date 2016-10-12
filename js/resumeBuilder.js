@@ -125,7 +125,7 @@ var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 var formattedGit = HTMLgithub.replace("%data%", bio.contacts.github);
 var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
 
-$("#topContacts").append(formattedEmail);
+$("#topContacts").append(formattedEmail.replace(bio.contacts.email, "#contact-me"));
 $("#topContacts").append(formattedGit);
 $("#topContacts").append(formattedLinkedin);
 
@@ -181,15 +181,15 @@ function displayProjects(p) {
     var formattedDescription = HTMLprojectDescription.replace("%data%", p[key].description);
     var formattedImage = HTMLprojectImage.replace("%data%", p[key].images);
 
-    $(".project-entry").append(formattedTitle);
+    $(".project-entry").append(formattedTitle.replace("#", p[key].URL));
     $(".project-entry").append(formattedDate);
     $(".project-entry").append(formattedDescription);
     $(".project-entry").append(formattedImage);
   }
+  var formattedProjectButton = HTMLprojectButton.replace("#", "#education");
+  $(".scroll-down-p").append(formattedProjectButton);
 }
 displayProjects(projects.projects);
-var formattedPButton = HTMLprojectButton.replace("#", "#education");
-$(formattedPButton).append(".scroll-down-p");
 
 // education
 education.display = function () {
@@ -234,7 +234,7 @@ $("#mapDiv").append(googleMap);
 // hr resize effect
 $(document).ready( function () {
 
-  $("hr").animate({
+  $("#horizontal-divider").animate({
     width: "100%"
   }, 1500, function () {
     // complete effect

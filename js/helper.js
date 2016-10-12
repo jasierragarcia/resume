@@ -1,5 +1,5 @@
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span id="role">%data%</span><hr>';
+var HTMLheaderRole = '<span id="role">%data%</span><hr id="horizontal-divider">';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="white-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="white-text">mobile</span><span class="white-text">%data%</span></li>';
@@ -46,7 +46,7 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
-var HTMLresumeFooter = '<p id="credit">Coded </> by Juan Sierra</p>';
+var HTMLresumeFooter = '<p id="credit">Coded by Juan Sierra</p>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
