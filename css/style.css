@@ -1,385 +1,152 @@
-body,
-div,
-ul,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding:0;
-  margin:0;
-  font-family: "Roboto", sans-serif;
+* {
+    border: 1px solid black !important;
 }
 
-.clear-fix {
-  overflow: auto;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.education-entry,
-.work-entry,
-.project-entry {
-  padding: 0 5%;
+/* responsive grid */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
-#name {
-  font-family: 'Raleway', sans-serif;
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#role {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  color: #fff;
-  background-color: #33363b;
-  border-radius: 3px;
+.col-1 {
+    width: 8.33%;
 }
 
-/* name-role div */
-
-#name-role {
-  position: relative;
-  top: 45%;
+.col-2 {
+    width: 16.66%;
 }
 
-#topContacts {
-  position: relative;
-  top: 45%;
+.col-3 {
+    width: 25%;
 }
 
-/* divider */
-#horizontal-divider {
-  border-style: none;
-  background-color: #fff;
-  height: 2px;
-  border-radius: 1px;
-  width: 0;
+.col-4 {
+    width: 33.33%;
 }
 
-/* arrow down button */
-
-.scroll-down {
-  position: relative;
-  top: 60%;
-  text-align: center;
+.col-5 {
+    width: 41.66%;
 }
 
-#scroll-btn-down {
-  font-size: 30px;
+.col-6 {
+    width: 50%;
 }
 
-.scroll-down-w {
-  text-align: center;
-}
-.work-btn {
-  color: #999 !important;
-}
-.work-btn:hover {
-  color: #1199c3 !important;
+.col-7 {
+    width: 58.33%;
 }
 
-.scroll-down-p {
-  text-align: center;
-}
-.project-btn {
-  color: #999 !important;
-}
-.project-btn:hover {
-  color: #1199c3 !important;
+.col-8 {
+    width: 66.66%;
 }
 
-/*
-.fa-arrow-down {
-  border: 2px solid #fff;
-  border-radius: 20px;
-}
-*/
-
-/* work experience */
-#work-entry {
-  padding-left: 5%;
+.col-9 {
+    width: 75%;
 }
 
-/* skills */
-
-#skills-section {
-  padding-top: 4%;
+.col-10 {
+    width: 83.33%;
 }
 
-#skills-h3 {
-  color: #999;
+.col-11 {
+    width: 91.66%;
 }
 
-#skills-entry {
-  color: #333;
-  list-style: none;
-  position: relative;
-  padding-left: 5%;
+.col-12 {
+    width: 100%;
 }
-
-#skills-entry li {
-  display: inline-block;
+.responsive-img, img {
+    max-width: 100%;
 }
-
-h1 {
-  font-size: 40px;
-  color: #fff;
-  line-height: 48px;
-  display: inline;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
-}
-
-h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  padding:10px 5%;
-
-}
+/* responsive grid */
 
 
-.date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: left;
-}
-
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: right;
-  padding-right: 10px;
-
-}
-
-p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
+/* custom styles */
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+    text-decoration: none;
 }
 
-.welcome-message {
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
-}
-
-.orange {
-  background-color: #f5ae23;
-}
-
-/* social icons styles */
-
-.fa {
-  color: #fff;
-  font-size: 100px;
-}
-
-.fa-github, .fa-envelope-o, .fa-linkedin {
-  font-size: 40px !important;
-}
-
-.fa:hover {
-  color: #33363b;
-}
-
-.white-text {
-  color: #fff;
-}
-
-.white-text {
-  font-weight: bold;
-  color: #fff;
-}
-
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear:both;
-}
-
-.dark-gray {
-  background-color: #4a4a4a;
-}
-
-/* TODO: Replace with image later */
 #header {
-  background-color: #2098D1;
-  height: 100vh;
+    height: 100vh;
+    background-color: #2098d1;
+    color: #fff;
 }
 
-.flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+#name-role  {
+    position: relative;
+    top: 45%;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
+#name, #role {
+    margin: 10px;
+    display: inline-block;
 }
 
-.center-content {
-  padding: 2.5% 5%;
+#role {
+    font-size: 20px;
+    font-weight: lighter;
 }
 
-ul {
-  list-style-type: none;
+#topContacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    height: 10%;
 }
 
-.biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
+#topContacts li {
+    font-size: 40px;
+    display: inline-block;
+    margin: 0 10%;
 }
 
-img {
-  padding: 10px;
+#workExperience {
+    height: 100vh;
+    background-color: #F9F9F9;
 }
 
-/* project section & images */
-
-#projects img {
-  max-width: 45%;
+#work-title, #skills-title {
+    margin: 5px;
 }
 
-
-span {
-  padding: 5px;
+#work-entry, #skills-entry {
+    margin: 5px;
 }
 
-#footer {
-  text-align: center;
-  height: 50px;
-}
-#credit {
-  color: #fff;
-  padding-top: 12px;
+.employer-text {
+    color: #2098d1;
 }
 
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 530px) {
-  #role {
-    display: block;
-  }
+.location-text {
+    float: right;
 }
 
-@media only screen and (max-width: 1024px) {
-  #footer {
-    margin-top: 5%;
-  }
+#skills-entry {
+    list-style: none;
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #footer {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-}
-#contact-me {
-  width: 100%;
-}
-
-.contact-form {
-  width: 50%;
-  position: relative;
-  float: right;
-}
-
-.contact-form, input {
-  display: block;
-  margin: 10px;
-  text-align: center;
-}
-
-.contact-form h4 {
-  color: #fff;
-}
-
-#name-input {
-  border-radius: 2px;
-  height: 35px;
-  width: 35%;
-}
-
-#email-input {
-  border-radius: 2px;
-  height: 35px;
-  width: 35%;
-}
-
-#email-message {
-  border-radius: 2px;
-  height: 50px;
-  width: 35%;
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 50%;
-  padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
+#skills-entry li {
+    display: inline-block;
 }

@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
 
   <title>Resume</title>
 
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-  <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAtuHFWd-bs0j_PU0O7x28mpSzJP8A7P-s&sensor=true"></script>
+  <!-- google maps API
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAtuHFWd-bs0j_PU0O7x28mpSzJP8A7P-s&sensor=true" async></script>
+  -->
+
   <!-- font awesome icons -->
-  <script src="https://use.fontawesome.com/4af4cde5b2.js"></script>
+  <script src="https://use.fontawesome.com/4af4cde5b2.js" async></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
 </head>
+
 <body>
-
-  <div id="main">
-
-    <div id="header" class="center-content clear-fix">
-      <div id="name-role">
-      </div>
-      <ul id="topContacts" class="flex-box"></ul>
-      <div class="scroll-down">
-      </div>
+  <div class="container">
+    <div id="header" class="row">
+      <div id="name-role" class="col-12"></div>
+      <ul id="topContacts" class="col-12"></ul>
     </div>
-    <div style="clear: both;"></div>
-    <div id="workExperience-skills" class="gray">
-      <div id="work-header">
-          <h2 id="work-title">Work Experience</h2>
+    <div id="workExperience" class="row">
+      <div id="work-header" class="col-12">
+        <h2 id="work-title">Work Experience</h2>
         <div id="work-entry">
         </div>
       </div>
-      <div id="skills-section">
+      <div id="skills-section" class="col-12">
         <div id="skills-header">
+          <h3 id="skills-title">Skills</h3>
           <div id="skills-entry">
-          </div>
-          <div class="scroll-down-w">
           </div>
         </div>
       </div>
     </div>
-    <div id="projects">
-      <h2>Projects</h2>
+    <div id="projects" class="row">
+      <div id="project-start" class="col-12">
+        <h2>Projects</h2>
+      </div>
+      <div id="project-display" class="col-12">
       
+      </div>
     </div>
-    <div class="scroll-down-p">
+    <div id="education" class="row">
+      <div id="education-start" class="col-12">
+        <h2>Education</h2>
+      </div>
+      <div id="education-display" class="col-12 responsive-img">
+      
+      </div>
     </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="contact-me">
+    <div id="contact-me" class="col-6">
       <div class="contact-form">
-        <h4>Get in touch!</h4>
-        <form action="https://formspree.io/jasierra.garcia@gmail.com" method="POST">
-          <input type="text" name="name" id="name-input" placeholder="Your Name">
-          <input type="email" name="email" id="email-input" placeholder="youremail@domain.com">
-          <input type="email" name="_replyto" id="email-message" placeholder="Message">
-          <input type="submit" id="send-button" value="Send">
+        <h3>Get in touch!</h3>
+        <form method="POST" id="contact-form" action="http://formspree.io/jasierra.garcia@gmail.com">
+          <input type="text" id="name-input" name="name" placeholder="First & Last Name">
+          <input type="email" id="email-input" name="email" placeholder="johndoe@domain.com">
+          <textarea name="message" id="message-box" placeholder="Your message"></textarea>
+          <button id="submit-button" type="submit">Send</button>
         </form>
       </div>
 
-      <div id="mapDiv">
+      <div id="mapDiv" class="col-6">
         <h2>Where I've Lived and Worked</h2>
       </div>
     </div>
-    <div id="footer" class="dark-gray">
+    <div id="footer" class="row">
 
-      </ul>
     </div>
-
   </div>
 
   <script src="js/jQuery.js"></script>
@@ -80,28 +84,29 @@
   <script src="js/resumeBuilder.js"></script>
 
   <script>
-    if(document.getElementsByClassName('flex-item').length === 0) {
+    if (document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.display = 'none';
     }
-    if(document.getElementsByTagName('h1').length === 0) {
+    if (document.getElementsByTagName('h1').length === 0) {
       document.getElementById('header').style.display = 'none';
     }
-    if(document.getElementsByClassName('work-entry').length === 0) {
+    if (document.getElementsByClassName('work-entry').length === 0) {
       document.getElementById('workExperience').style.display = 'none';
     }
-    if(document.getElementsByClassName('project-entry').length === 0) {
+    if (document.getElementsByClassName('project-entry').length === 0) {
       document.getElementById('projects').style.display = 'none';
     }
-    if(document.getElementsByClassName('education-entry').length === 0) {
+    if (document.getElementsByClassName('education-entry').length === 0) {
       document.getElementById('education').style.display = 'none';
     }
-    if(document.getElementsByClassName('flex-item').length === 0) {
+    if (document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('lets-connect').style.display = 'none';
     }
-    if(document.getElementById('map') === null) {
+    if (document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
     }
   </script>
 
 </body>
+
 </html>
