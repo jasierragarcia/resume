@@ -1,18 +1,17 @@
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span id="role">%data%</span><hr id="horizontal-divider">';
+var HTMLheaderRole = '<span id="role">%data%</span><hr id="hr-div">';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="white-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="white-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><a href="%data%" class="social-icons"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="white-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><a href="%data%" class="social-icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
-var HTMLlinkedin = '<li class="flex-item"><a href="%data%" class="social-icons" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
-var HTMLlocation = '<li class="flex-item"><span class="white-text">location</span><span class="white-text">%data%</span></li>';
+var HTMLnavAbout = '<li id="about-nav"><a href="#">About</a></li>';
+var HTMLnavWork = '<li id="work-nav"><a href="#">Work</a></li>';
+var HTMLnavProjects = '<li id="projects-nav"><a href="#">Projects</a></li>';
+var HTMLnavEdu = '<li id="edu-nav"><a href="#">Education</a></li>';
+var HTMLnavContact = '<li id="contact-nav"><a href="#">Contact Me</a></li>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
-var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
+var HTMLemail = '<li class="email"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
+var HTMLgithub = '<li class="github"><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
+var HTMLlinkedin = '<li class="linkedin"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills</h3><ul></ul>';
+var HTMLskillsStart = '<h3 id="skills-title">Skills</h3><ul></ul>';
 var HTMLskills = '<li class="flex-item"><span>%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';

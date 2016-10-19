@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Resume</title>
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -25,63 +27,32 @@
 
 <body>
   <div class="container">
-    <div id="header" class="row">
-      <div id="name-role" class="col-12"></div>
-      <ul id="topContacts" class="col-12"></ul>
-    </div>
-    <div id="workExperience" class="row">
-      <div id="work-header" class="col-12">
-        <h2 id="work-title">Work Experience</h2>
-        <div id="work-entry">
-        </div>
-      </div>
-      <div id="skills-section" class="col-12">
-        <div id="skills-header">
-          <h3 id="skills-title">Skills</h3>
-          <div id="skills-entry">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="projects" class="row">
-      <div id="project-start" class="col-12">
-        <h2>Projects</h2>
-      </div>
-      <div id="project-display" class="col-12">
-      
-      </div>
-    </div>
-    <div id="education" class="row">
-      <div id="education-start" class="col-12">
-        <h2>Education</h2>
-      </div>
-      <div id="education-display" class="col-12 responsive-img">
-      
-      </div>
-    </div>
-    <div id="contact-me" class="col-6">
-      <div class="contact-form">
-        <h3>Get in touch!</h3>
-        <form method="POST" id="contact-form" action="http://formspree.io/jasierra.garcia@gmail.com">
-          <input type="text" id="name-input" name="name" placeholder="First & Last Name">
-          <input type="email" id="email-input" name="email" placeholder="johndoe@domain.com">
-          <textarea name="message" id="message-box" placeholder="Your message"></textarea>
-          <button id="submit-button" type="submit">Send</button>
-        </form>
-      </div>
 
-      <div id="mapDiv" class="col-6">
-        <h2>Where I've Lived and Worked</h2>
-      </div>
-    </div>
-    <div id="footer" class="row">
+    <header class="row">
+      <nav class="col" id="nav-bar">
+        <ul id="menu-entry">
 
-    </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="row" id="main">
+      <section class="col" id="main-content">
+
+      </section>
+
+      <section class="col" id="main-contacts">
+        <ul id="topContacts">
+          
+        </ul>
+      </section>
+    </main>
+    
   </div>
 
   <script src="js/jQuery.js"></script>
   <script src="js/helper.js"></script>
-  <script src="js/resumeBuilder.js"></script>
+  <script src="js/index.js"></script>
 
   <script>
     if (document.getElementsByClassName('flex-item').length === 0) {
