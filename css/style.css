@@ -31,29 +31,65 @@
 		flex-direction: row;
 	}
 }
-/* flexbox grid */
+
+/* clear fix */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* opionated style */
+* {
+	list-style: none;
+}
 
 body {
+	color: #424242;
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
-    color: #424242;
+}
+
+a {
+	color: #424242;
 }
 
 #nav-bar {
 	background-color: #F4F5F6;
-	color: #424242;
 	height: 10vh;
 }
 
-#menu-entry, li {
+#menu-entry {
+	margin: auto;
+	font-size: 16px;
+}
+
+#menu-entry li {
 	display: inline-block;
 	float: right;
-	margin: 10px;
 	padding: 10px;
+	transition: width .60s, height .60s, background-color .60s;
+}
+
+#menu-entry a {
+	text-decoration: none;
+	transition: color .60s ease-in
+}
+
+#menu-entry a:hover {
+	color: #fff;
+}
+
+#menu-entry li:hover {
+	background-color: #424242;
+	border-radius: 3px;
 }
 
 #main {
 	height: 90vh;
+	display: block;
 }
 
 #main-content {
@@ -61,6 +97,63 @@ body {
 	top: 30%;
 }
 
+#introduction, #role {
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+}
+
+#role {
+	font-size: 30px;
+}
+
+#hr-div {
+	background-color: #424242;
+	border-style: none;
+	height: 2px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
 #main-contacts {
-	display: inline !important;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 30%;
+}
+
+#topContacts li {
+	display: inline-block;}
+
+/* font awesome social icons */
+
+/* hover color #4078C0 */
+.social-icons {
+	font-size: 35px;
+	margin: 50px;
+}
+
+#workExperience-skills {
+	height: 100vh;
+	position: relative;
+}
+
+.location-text {
+	font-style: italic;
+}
+
+#education {
+	position: relative;
+	height: 100vh;
+}
+
+#contact-me {
+	position: relative;
+	height: 90vh;
+}
+
+#footer {
+	height: 10vh;
+	position: relative;
+	background-color: #F4F5F6;
 }
