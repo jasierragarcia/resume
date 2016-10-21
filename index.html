@@ -28,13 +28,11 @@
 <body>
   <div class="container">
 
-    <header class="row">
-      <nav class="col" id="nav-bar">
-        <ul id="menu-entry">
+    <nav class="row" id="nav-bar">
+      <ul class="col" id="menu-entry">
 
-        </ul>
-      </nav>
-    </header>
+      </ul>
+    </nav>
 
     <main class="row" id="main">
       <section class="col" id="main-content">
@@ -47,6 +45,56 @@
         </ul>
       </section>
     </main>
+
+    <section class="row" id="workExperience-skills">
+      <ul id="work-entry" class="col">
+        <h2>Work Experience</h2>
+      </ul>
+
+      <ul class="col" id="skills-entry">
+        <h2>Skills</h2>
+      </ul>
+    </section>
+
+    <section class="row" id="projects">
+      <ul class="col" id="project-entry">
+        <h2>Projects</h2>
+      </ul>
+    </section>
+
+    <section class="row" id="education">
+      <ul class="col" id="education-entry">
+        <h2>Education</h2>
+      </ul>
+
+      <ul class="col" id="onlineCourses-entry">
+        <h2>Online Courses</h2>
+      </ul>
+    </section>
+
+    <section class="row" id="contact-me">
+      <div class="col">
+        <h3>Send me an email!</h3>
+        <form method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
+          <input type="email" name="email" placeholder="Your email">
+          <input type="subject" name="_subject" placeholder="Subject">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="col" id="gMaps">
+        <div id="gMaps-entry">
+          <h3>Where I've lived and worked</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer class="row" id="footer">
+      <div class="col" id="footer-entry">
+
+      </div>
+    </footer>
     
   </div>
 
@@ -55,9 +103,6 @@
   <script src="js/index.js"></script>
 
   <script>
-    if (document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
     if (document.getElementsByTagName('h1').length === 0) {
       document.getElementById('header').style.display = 'none';
     }
