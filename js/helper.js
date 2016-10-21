@@ -1,4 +1,4 @@
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
+var HTMLheaderName = '<h1 id="introduction">%data%</h1>';
 var HTMLheaderRole = '<span id="role">%data%</span><hr id="hr-div">';
 
 var HTMLnavAbout = '<li id="about-nav"><a href="#">About</a></li>';
@@ -7,9 +7,9 @@ var HTMLnavProjects = '<li id="projects-nav"><a href="#">Projects</a></li>';
 var HTMLnavEdu = '<li id="edu-nav"><a href="#">Education</a></li>';
 var HTMLnavContact = '<li id="contact-nav"><a href="#">Contact Me</a></li>';
 
-var HTMLemail = '<li class="email"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
-var HTMLgithub = '<li class="github"><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
-var HTMLlinkedin = '<li class="linkedin"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
+var HTMLemail = '<li><a href="#" class="social-icons"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
+var HTMLgithub = '<li><a href="#" class="social-icons"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
+var HTMLlinkedin = '<li><a href="#" class="social-icons"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
 
 var HTMLskillsStart = '<h3 id="skills-title">Skills</h3><ul></ul>';
 var HTMLskills = '<li class="flex-item"><span>%data%</span></li>';
