@@ -7,8 +7,7 @@
 }
 
 .container {
-	position: relative;
-	width: 100%; 
+	width: 100%;
 }
 
 .row {
@@ -21,6 +20,11 @@
 	flex: 1;
 	margin: .6em;
 	padding: .6em;
+}
+
+.responsive-img img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* media query */
@@ -58,7 +62,11 @@ a {
 
 #nav-bar {
 	background-color: #F4F5F6;
-	height: 10vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 #menu-entry {
@@ -88,7 +96,7 @@ a {
 }
 
 #main {
-	height: 90vh;
+	height: 100vh;
 	display: block;
 }
 
@@ -122,8 +130,18 @@ a {
 	top: 30%;
 }
 
+.social-icons {
+  transition: 1s;
+}
+
+.social-icons:hover {
+  color: #2098D1;
+  transition: color .60s;
+}
+
 #topContacts li {
-	display: inline-block;}
+	display: inline-block;
+}
 
 /* font awesome social icons */
 
@@ -135,7 +153,6 @@ a {
 
 #workExperience-skills {
 	height: 100vh;
-	position: relative;
 }
 
 .location-text {
@@ -143,12 +160,10 @@ a {
 }
 
 #education {
-	position: relative;
 	height: 100vh;
 }
 
 #contact-me {
-	position: relative;
 	height: 90vh;
 }
 
@@ -156,4 +171,11 @@ a {
 	height: 10vh;
 	position: relative;
 	background-color: #F4F5F6;
+}
+
+/* media queries for responsiveness */
+@media screen and (max-width: 850px) {
+  #workExperience-skills {
+    display: block;
+  }
 }

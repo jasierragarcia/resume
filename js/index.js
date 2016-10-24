@@ -87,7 +87,7 @@ var projects = {
         "URL": "http://jasierragarcia.github.io/portfolio-site-project",
         "repo": "https://github.com/jasierragarcia/portfolio-site-project"
     }, {
-        "title": "Animal Trading Cards",
+        "title": "Animal-Trading-Cards",
         "dates": "July 2016",
         "description": "Learning HTML and CSS.",
         "images": "images/card.png",
@@ -103,7 +103,7 @@ $("#menu-entry").append(HTMLnavProjects);
 $("#menu-entry").append(HTMLnavEdu);
 $("#menu-entry").append(HTMLnavContact);
 
-// bio 
+// bio
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 $("#main-content").append(formattedRole);
 
@@ -124,7 +124,7 @@ $("#topContacts").append(formattedLinkedin);
 // footer
 $("#footer-entry").append(HTMLresumeFooter);
 
-// work experience function 
+// work experience function
 work.display = function () {
     for (var i = 0; i < work.jobs.length; i++) {
         var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
@@ -145,7 +145,7 @@ work.display = function () {
 };
 work.display();
 
-// skills function 
+// skills function
 $("#skills-header").prepend(HTMLskillsStart);
 
 function displayOnlineCourse(o) {
@@ -156,7 +156,7 @@ function displayOnlineCourse(o) {
 }
 displayOnlineCourse(bio.skills);
 
-// projects function 
+// projects function
 function displayProjects(p) {
     for(var key in p) {
         if (p.hasOwnProperty(key)) {
