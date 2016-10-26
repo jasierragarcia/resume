@@ -2,126 +2,121 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Resume</title>
+	<title>Resume</title>
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-  <!-- google maps API
+	<!-- google maps API
   <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAtuHFWd-bs0j_PU0O7x28mpSzJP8A7P-s&sensor=true" async></script>
   -->
 
-  <!-- font awesome icons -->
-  <script src="https://use.fontawesome.com/4af4cde5b2.js" async></script>
+	<!-- font awesome icons -->
+	<script src="https://use.fontawesome.com/4af4cde5b2.js" async></script>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 </head>
 
 <body>
-  <div class="container">
+	<div class="container">
 
-    <nav class="row" id="nav-bar">
-      <ul class="col" id="menu-entry">
+		<header id="header-0" class="row cf">
+			<nav class="col nav-bar">
+				<ul id="nav-entry">
 
-      </ul>
-    </nav>
+				</ul>
+			</nav>
+    </header>
 
-    <main class="row" id="main">
-      <section class="col" id="main-content">
+		<header id="header-1"class="row cf">
+			<section class="col" id="header-entry">
 
-      </section>
+			</section>
 
-      <section class="col" id="main-contacts">
-        <ul id="topContacts">
+			<ul id="topContacts" class="col">
 
-        </ul>
-      </section>
-    </main>
+			</ul>
+		</header>
 
-    <section class="row" id="workExperience-skills">
-      <ul id="work-entry" class="col">
-        <h2>Work Experience</h2>
-      </ul>
+    <div class="cf"></div>
 
-      <ul class="col" id="skills-entry">
-        <h2>Skills</h2>
-      </ul>
+    <section id="workExperience" class="row cf">
+			<div class="col" id="work-entry">
+
+				<h2>Work Experience</h2>
+
+			</div>
+
+			<ul class="col" id="skills-entry">
+
+				<h2>Skills</h2>
+
+			</ul>
+
     </section>
 
-    <section class="row" id="projects">
-      <ul class="col responsive-img" id="project-entry">
-        <h2>Projects</h2>
-      </ul>
+    <section id="projects" class="row cf">
+			<div class="col responsive-img" id="project-entry">
+
+				<h2>Projects</h2>
+
+			</div>
+
     </section>
 
-    <section class="row" id="education">
-      <ul class="col" id="education-entry">
-        <h2>Education</h2>
-      </ul>
+    <section id="education" class="row cf">
+			<div class="col" id="education-entry">
 
-      <ul class="col" id="onlineCourses-entry">
-        <h2>Online Courses</h2>
-      </ul>
+				<h2>Education</h2>
+
+			</div>
+
+			<div class="col" id="onlineCourse-entry">
+
+			</div>
+
     </section>
 
-    <section class="row" id="contact-me">
-      <div class="col">
-        <h3>Send me an email!</h3>
-        <form method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
-          <input type="email" name="email" placeholder="Your email">
-          <input type="subject" name="_subject" placeholder="Subject">
-          <textarea name="message" placeholder="Your message"></textarea>
-          <button type="submit">Send</button>
+    <section id="contact-me" class="row cf">
+			<div class="col" id="googleMap">
+
+				<h2>Where I've Lived and Worked</h2>
+
+			</div>
+
+			<div class="col" id="contact-me">
+
+				<h3>Email Me!</h3>
+
+				<form method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
+          <input class="contact-me-item" type="email" name="email" placeholder="john-doe@domain.com">
+          <input class="contact-me-item" type="subject" name="_subject" placeholder="Subject">
+          <textarea cols="30" rows="3" name="message" placeholder="Message"></textarea>
+          <button class="contact-me-item" type="submit">Send</button>
         </form>
-      </div>
 
-      <div class="col" id="gMaps">
-        <div id="gMaps-entry">
-          <h3>Where I've lived and worked</h3>
-        </div>
-      </div>
+			</div>
     </section>
 
-    <footer class="row" id="footer">
-      <div class="col" id="footer-entry">
+    <footer id="footer" class="row cf">
+			<div class="col" id="footer-entry">
 
-      </div>
+			</div>
     </footer>
 
-  </div>
+	</div>
 
-  <script src="js/jQuery.js"></script>
-  <script src="js/helper.js"></script>
-  <script src="js/index.js"></script>
-
-  <script>
-    if (document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if (document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if (document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if (document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if (document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
-    }
-    if (document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/index.js"></script>
 
 </body>
 

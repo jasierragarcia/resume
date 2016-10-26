@@ -1,46 +1,47 @@
-var HTMLheaderName = '<h1 id="introduction">%data%</h1>';
-var HTMLheaderRole = '<span id="role">%data%</span><hr id="hr-div">';
+var HTMLheaderIntro = '<h1 id="intro">%data%</h1>';
+var HTMLheaderRole = '<p id="role">%data%</p><hr id="hr-div">';
 
-var HTMLnavAbout = '<li id="about-nav"><a href="#">About</a></li>';
-var HTMLnavWork = '<li id="work-nav"><a href="#">Work</a></li>';
-var HTMLnavProjects = '<li id="projects-nav"><a href="#">Projects</a></li>';
-var HTMLnavEdu = '<li id="edu-nav"><a href="#">Education</a></li>';
-var HTMLnavContact = '<li id="contact-nav"><a href="#">Contact Me</a></li>';
+var HTMLnavHome = '<li><a href="#" id="home-nav">Home</a></li>';
+var HTMLnavWork = '<li><a href="#" id="work-nav">Work</a></li>';
+var HTMLnavProjects = '<li><a href="#" id="projects-nav">Projects</a></li>';
+var HTMLnavEdu = '<li><a href="#" id="edu-nav">Education</a></li>';
+var HTMLnavContact = '<li><a href="#" id="contact-nav">Contact Me</a></li>';
 
-var HTMLemail = '<li><a href="#" class="social-icons"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
-var HTMLgithub = '<li><a href="#" class="social-icons"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
-var HTMLlinkedin = '<li><a href="#" class="social-icons"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
+var HTMLemail = '<li class="social-icon-li"><i class="fa fa-envelope-o" aria-hidden="true"></i></li>';
+var HTMLtwitter = '<li class="social-icon-li"><i class="fa fa-twitter" aria-hidden="true"></i></li>';
+var HTMLgithub = '<li class="social-icon-li"><i class="fa fa-github" aria-hidden="true"></i></li>';
+var HTMLlinkedin = '<li class="social-icon-li"><i class="fa fa-linkedin" aria-hidden="true"></i></li>';
+var HTMLblog = '<li class="social-icon-li"><i class="fa fa-rss" aria-hidden="true"></i></li>';
 
-var HTMLskillsStart = '<h3 id="skills-title">Skills</h3><ul></ul>';
-var HTMLskills = '<li class="flex-item"><span>%data%</span></li>';
+var HTMLbioPic = '<img src="%data%" class="biopic">';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#" class="employer-text">%data%';
+var HTMLskills = '<li class="skills">%data%</li>';
+
+var HTMLworkEmployer = '<a href="#" class="employer">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<li href="#">%data%</li>';
-var HTMLprojectDates = '<li class="date-text">%data%</li>';
+var HTMLprojectTitle = '<p href="#" class="project-title">%data%</p>';
+var HTMLprojectDates = '<p class="date-text">%data%</p>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
+var HTMLschoolName = '<a href="#" class="school-name">%data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolLocation = '<div class="location-text col">%data%</div>';
+var HTMLschoolMajor = '<p>Major: %data%</p>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineTitle = '<p>%data%</p>';
+var HTMLonlineSchool = '<a href="#" class="online-title">%data%</a>';
+var HTMLonlineDates = '<p class="date-text">%data%</p>';
+var HTMLonlineURL = '<a href="#">%data%</a>';
 
-var HTMLresumeFooter = '<p id="credit">Coded by Juan Sierra</p>';
+var HTMLfooter = '<p>Coded by <a href="#" class="credit">Juan Sierra </a></p>';
+
+var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
 

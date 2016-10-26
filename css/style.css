@@ -7,175 +7,236 @@
 }
 
 .container {
-	width: 100%;
+    width: 100%;
 }
 
 .row {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .col {
-	flex: 1;
-	margin: .6em;
-	padding: .6em;
+    flex: 1;
+    margin: .6em;
+    padding: .6em;
 }
 
 .responsive-img img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
 /* media query */
 
 @media screen and (min-width: 650px) {
-	.row {
-		display: flex;
-		flex-direction: row;
-	}
+    .row {
+        display: flex;
+        flex-direction: row;
+    };
 }
-
-/* clear fix */
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 /* opionated style */
 * {
-	list-style: none;
+    list-style: none;
+}
+
+html body {
+  height: 100%;
 }
 
 body {
-	color: #424242;
+    color: #424242;
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
 }
 
 a {
-	color: #424242;
+    color: #424242;
 }
 
-#nav-bar {
-	background-color: #F4F5F6;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+#header-0 {
+    background-color: #F4F5F6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
-#menu-entry {
-	margin: auto;
-	font-size: 16px;
+#nav-entry {
+    margin: auto;
+    font-size: 16px;
 }
 
-#menu-entry li {
-	display: inline-block;
-	float: right;
-	padding: 10px;
-	transition: width .60s, height .60s, background-color .60s;
+#nav-entry li {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    transition: width .60s, height .60s, background-color .60s;
 }
 
-#menu-entry a {
-	text-decoration: none;
-	transition: color .60s ease-in
+#nav-entry a {
+    text-decoration: none;
+    transition: color .60s ease-in;
 }
 
-#menu-entry a:hover {
-	color: #fff;
+#nav-entry a:hover {
+  color: #fff;
 }
 
-#menu-entry li:hover {
-	background-color: #424242;
-	border-radius: 3px;
+#nav-entry li:hover {
+    background-color: #424242;
+    border-radius: 3px;
 }
 
-#main {
-	height: 100vh;
-	display: block;
+#header-1 {
+    height: 100vh;
+    display: block;
 }
 
-#main-content {
-	position: relative;
-	top: 30%;
+#header-entry {
+    position: relative;
+    top: 30%;
 }
 
-#introduction, #role {
-	display: inline-block;
-	display: flex;
-	justify-content: center;
+#intro, #role {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 #role {
-	font-size: 30px;
+    font-size: 30px;
 }
 
 #hr-div {
-	background-color: #424242;
-	border-style: none;
-	height: 2px;
-	margin: 20px;
-	border-radius: 10px;
+    background-color: #424242;
+    border-style: none;
+    height: 2px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-#main-contacts {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	top: 30%;
+#topContacts {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 30%;
 }
 
-.social-icons {
-  transition: 1s;
+.social-icon-li {
+    transition: 1s;
 }
 
-.social-icons:hover {
-  color: #2098D1;
-  transition: color .60s;
+.social-icon-li:hover {
+    color: #2098D1;
+    transition: color .60s;
 }
 
 #topContacts li {
-	display: inline-block;
+    display: inline-block;
 }
 
 /* font awesome social icons */
 
 /* hover color #4078C0 */
-.social-icons {
-	font-size: 35px;
-	margin: 50px;
+.social-icon-li {
+    font-size: 35px;
+    margin: 50px;
 }
 
-#workExperience-skills {
-	height: 100vh;
+#workExperience {
+  height: 100%;
+}
+
+.employer {
+  text-decoration: none;
+  color: #2098D1;
 }
 
 .location-text {
-	font-style: italic;
+  float: right;
+}
+
+.location-text {
+    font-style: italic;
+}
+
+.skills {
+  padding: 2px;
+}
+
+#projects {
+  height: 100%;
+}
+
+.project-title {
+  color: #2098D1;
+}
+
+.date-text {
+  font-style: italic;
 }
 
 #education {
-	height: 100vh;
+  height: 100%;
+}
+
+.school-name, .online-title {
+  text-decoration: none;
+  color: #2098D1;
 }
 
 #contact-me {
-	height: 90vh;
+    height: 100%;
+}
+
+.contact-me-item {
+  margin: 0 auto;
+  display: block;
+  max-width: 85%;
+}
+
+form {
+  text-align: center;
 }
 
 #footer {
-	height: 10vh;
-	position: relative;
-	background-color: #F4F5F6;
+    position: relative;
+    background-color: #F4F5F6;
+    text-align: center;
+}
+
+.credit {
+  text-decoration: none;
+  color: #2098D1;
 }
 
 /* media queries for responsiveness */
-@media screen and (max-width: 850px) {
-  #workExperience-skills {
-    display: block;
-  }
-}
