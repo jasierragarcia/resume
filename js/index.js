@@ -216,7 +216,6 @@ function displayOnlineCourse(o) {
 displayOnlineCourse(education.onlineCourses);
 
 // footer
-
 $("#footer-entry").append(HTMLfooter);
 
 

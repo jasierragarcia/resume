@@ -67,7 +67,7 @@
     list-style: none;
 }
 
-html body {
+html body header {
   height: 100%;
 }
 
@@ -88,6 +88,7 @@ a {
     top: 0;
     left: 0;
     z-index: 9999;
+    height: 85px;
 }
 
 #nav-entry {
@@ -95,25 +96,28 @@ a {
     font-size: 16px;
 }
 
-#nav-entry li {
+.nav-list {
     display: inline-block;
     float: right;
-    padding: 10px;
-    transition: width .60s, height .60s, background-color .60s;
+    padding: 15px;
 }
 
-#nav-entry a {
+.nav-menu {
     text-decoration: none;
-    transition: color .60s ease-in;
 }
 
-#nav-entry a:hover {
-  color: #fff;
+.nav-list::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #424242;
+  transition: width .3s;
+  margin-top: 10px;
 }
 
-#nav-entry li:hover {
-    background-color: #424242;
-    border-radius: 3px;
+.nav-list:hover::after {
+  width: 100%;
 }
 
 #header-1 {
@@ -157,7 +161,8 @@ a {
 
 .social-icon-li:hover {
     color: #2098D1;
-    transition: color .60s;
+    transition: color .50s;
+    cursor: pointer;
 }
 
 #topContacts li {
@@ -173,7 +178,7 @@ a {
 }
 
 #workExperience {
-  height: 100%;
+  height: 100vh;
 }
 
 .employer {
@@ -194,11 +199,32 @@ a {
 }
 
 #projects {
-  height: 100%;
+  height: 100vh;
 }
 
 .project-title {
   color: #2098D1;
+}
+
+#project-entry-0 {
+  height: 100vh;
+  background-image: url(/images/portfolio-project.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#project-entry-1 {
+  height: 100vh;
+  background-image: url(/images/bitshop.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#project-entry-2 {
+  height: 100vh;
+  background-image: url(/images/card.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .date-text {
@@ -206,7 +232,7 @@ a {
 }
 
 #education {
-  height: 100%;
+  height: 100vh;
 }
 
 .school-name, .online-title {
@@ -215,7 +241,7 @@ a {
 }
 
 #contact-me {
-    height: 100%;
+    height: 90vh;
 }
 
 .contact-me-item {
@@ -225,10 +251,31 @@ a {
 }
 
 form {
-  text-align: center;
+}
+
+.contact-me-item {
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#email-in {
+  border: 2px solid #424242;
+  width: 100%;
+}
+
+#subject-in {
+  border: 2px solid #424242;
+  width: 100%;
+}
+
+#message-in {
+  border: 2px solid #424242;
+  width: 100%;
 }
 
 #footer {
+    height: 10vh;
     position: relative;
     background-color: #F4F5F6;
     text-align: center;

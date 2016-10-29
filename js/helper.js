@@ -1,11 +1,11 @@
 var HTMLheaderIntro = '<h1 id="intro">%data%</h1>';
 var HTMLheaderRole = '<p id="role">%data%</p><hr id="hr-div">';
 
-var HTMLnavHome = '<li><a href="#" id="home-nav">Home</a></li>';
-var HTMLnavWork = '<li><a href="#" id="work-nav">Work</a></li>';
-var HTMLnavProjects = '<li><a href="#" id="projects-nav">Projects</a></li>';
-var HTMLnavEdu = '<li><a href="#" id="edu-nav">Education</a></li>';
-var HTMLnavContact = '<li><a href="#" id="contact-nav">Contact Me</a></li>';
+var HTMLnavHome = '<li class="nav-list"><a href="#" id="home-nav" class="nav-menu">Home</a></li>';
+var HTMLnavWork = '<li class="nav-list"><a href="#" id="work-nav" class="nav-menu">Work</a></li>';
+var HTMLnavProjects = '<li class="nav-list"><a href="#" id="projects-nav" class="nav-menu">Projects</a></li>';
+var HTMLnavEdu = '<li class="nav-list"><a href="#" id="edu-nav" class="nav-menu">Education</a></li>';
+var HTMLnavContact = '<li class="nav-list"><a href="#" id="contact-nav" class="nav-menu">Contact Me</a></li>';
 
 var HTMLemail = '<li class="social-icon-li"><i class="fa fa-envelope-o" aria-hidden="true"></i></li>';
 var HTMLtwitter = '<li class="social-icon-li"><i class="fa fa-twitter" aria-hidden="true"></i></li>';
