@@ -7,11 +7,11 @@ var HTMLnavProjects = '<li class="nav-list"><a href="#" id="projects-nav" class=
 var HTMLnavEdu = '<li class="nav-list"><a href="#" id="edu-nav" class="nav-menu">Education</a></li>';
 var HTMLnavContact = '<li class="nav-list"><a href="#" id="contact-nav" class="nav-menu">Contact Me</a></li>';
 
-var HTMLemail = '<li class="social-icon-li"><i class="fa fa-envelope-o" aria-hidden="true"></i></li>';
-var HTMLtwitter = '<li class="social-icon-li"><i class="fa fa-twitter" aria-hidden="true"></i></li>';
-var HTMLgithub = '<li class="social-icon-li"><i class="fa fa-github" aria-hidden="true"></i></li>';
-var HTMLlinkedin = '<li class="social-icon-li"><i class="fa fa-linkedin" aria-hidden="true"></i></li>';
-var HTMLblog = '<li class="social-icon-li"><i class="fa fa-rss" aria-hidden="true"></i></li>';
+var HTMLemail = '<li class="social-icon-li"><a href="#" class="social-link"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
+var HTMLtwitter = '<li class="social-icon-li"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
+var HTMLgithub = '<li class="social-icon-li"><a href="#" class="social-link"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
+var HTMLlinkedin = '<li class="social-icon-li"><a href="#" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
+var HTMLblog = '<li class="social-icon-li"><a href="#" class="social-link"><i class="fa fa-rss" aria-hidden="true"></i></a></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 
@@ -22,6 +22,7 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkIcon = '<span class="workIcon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>';
 
 var HTMLprojectTitle = '<p href="#" class="project-title">%data%</p>';
 var HTMLprojectDates = '<p class="date-text">%data%</p>';
@@ -32,12 +33,14 @@ var HTMLschoolName = '<a href="#" class="school-name">%data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text col">%data%</div>';
 var HTMLschoolMajor = '<p>Major: %data%</p>';
+var HTMLeducationIcon = '<span class="eduIcon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<p>%data%</p>';
 var HTMLonlineSchool = '<a href="#" class="online-title">%data%</a>';
 var HTMLonlineDates = '<p class="date-text">%data%</p>';
 var HTMLonlineURL = '<a href="#">%data%</a>';
+var HTMLonlineCourseIcon = '<span class="onlineIcon"><i class="fa fa-laptop" aria-hidden="true"></i></span>';
 
 var HTMLfooter = '<p>Coded by <a href="#" class="credit">Juan Sierra </a></p>';
 

@@ -117,13 +117,13 @@ function displayBio(b) {
 
 	// contact info
 	var formattedEmail = HTMLemail.replace("%data%", b.contacts.email);
-	$("#topContacts").append(formattedEmail);
+	$("#footerContacts").append(formattedEmail);
 
 	var formattedGit = HTMLgithub.replace("%data%", b.contacts.github);
-	$("#topContacts").append(formattedGit);
+	$("#footerContacts").append(formattedGit);
 
 	var formattedLinkedin = HTMLlinkedin.replace("%data%", b.contacts.linkedin);
-	$("#topContacts").append(formattedLinkedin);
+	$("#footerContacts").append(formattedLinkedin);
 }
 
 displayBio(bio);
@@ -138,7 +138,7 @@ function displaySkills(s) {
 displaySkills(bio.skills);
 
 
-work.display = function () {
+work.display = function() {
 	for (var i = 0; i < work.jobs.length; i++) {
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
 		$("#work-entry").append(formattedEmployer);
@@ -154,10 +154,11 @@ work.display = function () {
 
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
 		$("#work-entry").append(formattedDescription);
-  }
+	}
 };
 
 work.display();
+$("#work-icon-entry").append(HTMLworkIcon);
 
 // projects
 function displayProjects(p) {
@@ -178,7 +179,7 @@ function displayProjects(p) {
 displayProjects(projects.projects);
 
 // education
-education.display = function () {
+education.display = function() {
 	for (var key in education.schools) {
 		if (education.schools.hasOwnProperty([key])) {
 			var formattedScName = HTMLschoolName.replace("%data%", education.schools[key].name);
@@ -194,6 +195,9 @@ education.display = function () {
 };
 
 education.display();
+
+$("#eduIcon").append(HTMLeducationIcon);
+$("#onlineIcon").append(HTMLonlineCourseIcon);
 
 // online courses
 function displayOnlineCourse(o) {
