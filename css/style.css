@@ -178,6 +178,7 @@ body {
 }
 
 #skills-section {
+	text-align: center;
 
 }
 
@@ -225,4 +226,14 @@ body {
 #footer {
   height: 10%;
   white-space: nowrap;
+}
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+	#work-entry {
+	}
+	.workIcon {
+		display: none;
+	}
 }
