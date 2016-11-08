@@ -1,23 +1,22 @@
 /* flexbox grid */
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html {
-	height: 100%;
-}
-
-body {
-	height: 100%;
+img, embed, object, video {
+	max-width: 100%;
 }
 
 .container {
-	width: 100%; 
+	min-width: 100%;
 	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
 }
 
 .row {
@@ -32,10 +31,16 @@ body {
 	padding: .6em;
 }
 
+.responsive-img {
+	max-width: 100%;
+}
+
 /* media query */
 
-@media screen and (min-width: 650px) { /* min-width can be changed to whatever you want. */
-	.row {								/* doesn't have to be exactly 650px */
+@media screen and (min-width: 650px) {
+ /* min-width can be changed to whatever you want. */
+	.row {
+								/* doesn't have to be exactly 650px */
 		display: flex;
 		flex-direction: row;
 	}
@@ -81,45 +86,62 @@ body {
 
 /* custom css */
 
+html {
+  height: 100%;
+}
+
 body {
-	background-color: #FAFAFA;
+  height: 100%;
+}
+
+body {
 	font-family: 'Raleway', sans-serif;
+	color: #4A4A48;
 }
 
 #nav-bar {
-	color: #424242;
-	background-color: #F4F5F6;
-	width: 100%;
-	height: 10vh;
-	padding-bottom: 7.5em;
-	position: fixed;
-	z-index: 9999;
+  background-color: #4A4A48;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 #logo {
-	padding: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-text {
+  color: #F4F4F4;
+  padding: 10px;
+  background-color: #B0D0D3;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 30px;
 }
 
 #nav {
-	padding: 1.6em;
-	white-space: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 #nav-entry {
-	text-align: right;
+  list-style: none;
+  position: relative;
+  top: 25%;
+  text-align: right;
 }
 
 .nav-list {
-	list-style: none;
-	padding: 0.50em;
-	display: inline-block;
+  display: inline-block;
+  padding: 10px;
 }
 
 .nav-menu {
-	text-decoration: none;
-	color: #424242;
-	cursor: pointer;
-	font-size: 17px;
+  color: #F4F4F4;
+  text-decoration: none;
 }
 
 .nav-list::after {
@@ -127,7 +149,7 @@ body {
   	display: block;
   	width: 0;
   	height: 2px;
-  	background: #F7CE40;
+  	background: #B0D0D3;
   	transition: width .3s;
   	margin-top: 10px;
 }
@@ -136,134 +158,51 @@ body {
 	width: 100%;
 }
 
+.section {
+  min-height: 100%;
+}
+
 #main-page {
-	height: 100vh;
 	display: block;
-	text-align: center;
-	color: #424242;
-	overflow: hidden;
-}
-
-#hr-div {
-	border: 1px solid #424242;
-	border-radius: 10px;
-}
-
-#role {
-	font-size: 26px;
-}
-
-#header-entry, #skills-section {
-	position: relative;
-	top: 30%;
-}
-
-.skills-title {
-	font-style: italic;
-}
-
-.skills {
-	display: inline-block;
-	padding: 1em;
-	font-size: 18px;
+	background-color: #F4F4F4;
 }
 
 #workExperience {
-	border: 2px solid orange;
-	height: 100vh;
-	overflow: hidden;
-	color: #424242;
+	background-color: #B0D0D3;
 }
 
-#work-entry {
-	position: relative;
-	top: 30%;
-}
-
-#work-icon-entry {
-	text-align: right;
-	position: relative;
-	top: 45%;
-}
-
-.workIcon {
-	font-size: 15em;
-	margin: 0.15em;
-}
-
-#education {
-	height: 100vh;
-	display: block;
-	overflow: hidden;
-	color: #424242;
-}
-
-#education-entry, #onlineCourse-entry {
-	position: relative;
-	top: 30%;
-}
-
-#eduIcon {
-	text-align: right;
-}
-
-.eduIcon {
-	font-size: 15em;
-	margin: 0.35em;
-	color: #424242;
-}
-
-.onlineIcon {
-	font-size: 15em;
-	margin: 0.35em;
-	color: #424242;
-}
-
-#onlineCourse-entry {
-	text-align: right;
-}
-
-#contact-section {
-	height: 90vh;
-	overflow: hidden;
-}
-
-#googleMap, #contact-me {
-	position: relative;
-	top: 30%;
+.employer {
+	text-decoration: none;
+	color: #F4F4F4;
+	cursor: pointer;
 }
 
 .location-text {
-	float: right;
-}
-
-#footer {
-	background-color: #F4F5F6;
-	height: 10vh;
-}
-
-#footer-entry {
-	text-align: center;
-}
-
-#footerContacts {
+	font-style: italic;
 	text-align: right;
 }
 
-.social-icon-li {
-	display: inline-block;
-	font-size: 2.5em;
+.workIcon {
+	color: #F4F4F4;
+	font-size: 10em;
+	position: relative;
+	top: 30%;
+	left: 40%;
 }
 
-.social-link {
-	color: #424242;
-	cursor: pointer;
-	transition: color 0.60s ease-in;
+#project-entry-0 {
+	background-color: #E84855;
 }
 
-.social-link:hover {
-	color: #F7CE40;
-	transition: color 0.60s ease-out;
+#project-entry-1 {
+	background-color: #B0D0D3;
 }
 
-/* media queries for responsiveness */
+#project-entry-2 {
+	background-color: #E1DABD;
+}
+
+#footer {
+  height: 10%;
+  white-space: nowrap;
+}

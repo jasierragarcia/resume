@@ -1,133 +1,93 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Resume</title>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-	<!-- google maps API
-  <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAtuHFWd-bs0j_PU0O7x28mpSzJP8A7P-s&sensor=true" async></script>
-  -->
-
-	<!-- font awesome icons -->
-	<script src="https://use.fontawesome.com/4af4cde5b2.js" async></script>
-
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-</head>
-
-<body>
-	<div class="container">
-
-		<header id="nav-bar" class="row cf">
-			<div class="col" id="logo">
-				<h1>JS</h1>
-			</div>
-			<nav class="col" id="nav">
-				<ul id="nav-entry">
-
-				</ul>
-			</nav>
-		</header>
-
-		<main id="main-page" class="row cf">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Resume</title>
+		<link rel="icon" type="image/icon" href="/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<!-- google maps API
+		<script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAtuHFWd-bs0j_PU0O7x28mpSzJP8A7P-s&sensor=true" async></script>
+		-->
+		<!-- font awesome icons -->
+		<script src="https://use.fontawesome.com/4af4cde5b2.js" async></script>
+	</head>
+	<body>
+		<div class="container">
+			<header id="nav-bar" class="row cf">
+				<div class="col" id="logo">
+					<h1 class="logo-text">JS</h1>
+				</div>
+				<nav class="col" id="nav">
+					<ul id="nav-entry">
+					</ul>
+				</nav>
+			</header>
+			<main id="main-page" class="row cf section">
 			<section class="col" id="header-entry">
-
 			</section>
 			<section class="col" id="skills-section">
+				<h2 class="skills-title">Skill Set</h2>
 				<ul  id="skills-entry">
-
-					<h2 class="skills-title">Skill Set</h2>
-
 				</ul>
 			</section>
-		</main>
-
-		<div class="cf"></div>
-
-		<section id="workExperience" class="row cf">
-			<div class="col" id="work-entry">
-
-				<h2>Work Experience</h2>
-
-			</div>
-			<div class="col" id="work-icon-entry">
-				
-			</div>
-		</section>
-
-		<section id="projects" class="row cf">
-
-		</section>
-
-		<section id="education" class="row cf">
-			<div class="col" id="education-entry">
-
-				<h2>Education</h2>
-
-			</div>
-
-			<div id="eduIcon">
-				
-			</div>
-
-			<div class="col" id="onlineCourse-entry">
-
-			</div>
-
-			<div id="onlineIcon">
-				
-			</div>
-
-		</section>
-
-		<section id="contact-section" class="row cf">
-			<div class="col" id="googleMap">
-
-				<h2>Where I've Lived and Worked</h2>
-
-			</div>
-
-			<div class="col" id="contact-me">
-
-				<h3>Email Me!</h3>
-
-				<form method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
-					<input class="contact-me-item" id="email-in" type="email" name="email" placeholder="john-doe@domain.com">
-					<input class="contact-me-item" id="subject-in" type="subject" name="_subject" placeholder="Subject">
-					<textarea cols="30" rows="3" id="message-in" name="message" placeholder="Message"></textarea>
-					<button class="contact-me-item" id="send-buttton" type="submit">Send</button>
-				</form>
-
-			</div>
-		</section>
-
-		<footer id="footer" class="row cf">
-			<div class="col" id="footer-entry">
-
-			</div>
-			<section class="col" id="bottom-contacts">
-				<ul id="footerContacts">
-
-				</ul>
+			</main>
+			<div class="cf"></div>
+			<section id="workExperience" class="row cf section">
+				<div class="col" id="work-entry">
+					<h2>Work Experience</h2>
+				</div>
+				<div class="col" id="work-icon-entry">
+				</div>
 			</section>
-		</footer>
-
-	</div>
-
-	<script src="js/jQuery.js"></script>
-	<script src="js/helper.js"></script>
-	<script src="js/index.js"></script>
-
-</body>
-
+			<section id="projects" class="row cf section">
+				<div class="project-title">
+					<h2>Projects</h2>
+				</div>
+				<div class="col responsive-img pro-section" id="project-entry-0">
+				</div>
+				<div class="col responsive-img pro-section" id="project-entry-1">
+				</div>
+				<div class="col responsive-img pro-section" id="project-entry-2">
+				</div>
+			</section>
+			<section id="education" class="row cf section">
+				<h2 class="project-title">Projects</h2>
+				<div id="eduIcon" class="col">
+				</div>
+				<div class="col" id="onlineCourse-entry">
+				</div>
+				<div id="onlineIcon" class="col">
+				</div>
+			</section>
+			<section id="contact-section" class="row cf section">
+				<div class="col" id="googleMap">
+					<h2>Where I've Lived and Worked</h2>
+				</div>
+				<div class="col" id="contact-me">
+					<h3>Get in Touch!</h3>
+					<form method="POST" action="http://formspree.io/jasierra.garcia@gmail.com">
+						<input class="contact-me-item" id="email-in" type="email" name="email" placeholder="john-doe@domain.com">
+						<input class="contact-me-item" id="subject-in" type="subject" name="_subject" placeholder="Subject">
+						<textarea cols="30" rows="3" id="message-in" name="message" placeholder="Message"></textarea>
+						<button class="contact-me-item" id="send-buttton" type="submit">Send</button>
+					</form>
+					<section class="col" id="bottom-contacts">
+						<ul id="footerContacts">
+						</ul>
+					</section>
+				</div>
+			</section>
+			<footer id="footer" class="row cf">
+				<div class="col" id="footer-entry">
+				</div>
+			</footer>
+		</div>
+		<script src="js/jQuery.js"></script>
+		<script src="js/helper.js"></script>
+		<script src="js/index.js"></script>
+	</body>
 </html>

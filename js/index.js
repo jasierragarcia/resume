@@ -10,8 +10,8 @@ var bio = {
 		"twitter": "@jasierra.garcia",
 		"location": "San Pedro Sula, Honduras"
 	},
-
 	"skills": ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Git", "Gulp", "Terminal (Linux/MacOS)", "Responsive Design"],
+	"shortBio": "",
 	"bioPic": "#"
 };
 
