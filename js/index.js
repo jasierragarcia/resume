@@ -244,3 +244,10 @@ $(document).ready(function() {
 	});
 });
 */
+
+$(window).resize(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth <= 800) {
+        $("#work-icon-entry").remove();
+    }
+})
