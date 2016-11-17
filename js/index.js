@@ -11,7 +11,7 @@ var bio = {
         "location": "San Pedro Sula, Honduras"
     },
     "skills": ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Git", "Gulp", "Terminal (Linux/MacOS)", "Responsive Design"],
-    "shortBio": "#",
+    "shortSummary": "I have 1+ year(s) of experince with HTML5, CSS3, JavaScript, and jQuery. Through my basic foundation of Front-End Web Development, I was able to use front-end skills at a hackathon to help a non-profit organizaiton - Builders of Hope, they were in need of a software solution that would ease their process that can help local communities in developing countries buy and sell affordable housing, by increasing the availability of high-quality, safe, affordable workforce housing options.",
     "bioPic": "images/me.jpg"
 };
 
@@ -79,25 +79,26 @@ var work = {
     }]
 };
 
-var projects = {
+var project = {
     "projects": [{
         "title": "Portfolio Site Project",
         "dates": "September 2016",
         "description": "From mockup design, to coded website.",
-        "images": "images/portfolio-project.png",
+        "images": "images/mockup.svg",
         "URL": "http://jasierragarcia.github.io/portfolio-site-project",
         "repo": "https://github.com/jasierragarcia/portfolio-site-project"
     }, {
-        "title": "Animal-Trading-Cards",
+        "title": "Bitshop",
         "dates": "July 2016",
-        "description": "Learning HTML and CSS.",
-        "images": "images/card.png",
+        "description": "Working with a friend on a open-source shopping site boiler-plate",
+        "images": "images/cart.svg",
         "URL": "https://jasierragarcia.github.io/Animal-Trading-Cards/",
         "repo": "https://github.com/jasierragarcia/Animal-Trading-Cards"
     }, {
         "title": "Mockup-Article",
         "dates": "July 2016",
         "description": "I was given a PDF of an aritcle and I had to turn into a real website",
+        "images": "images/article.svg",
         "URL": "https://jasierragarcia.github.io/mockup-to-article/",
         "repo": "https://github.com/jasierragarcia/mockup-to-article"
 	}]
@@ -118,9 +119,11 @@ function displayBio(b) {
     var formattedIntro = HTMLheaderIntro.replace("%data%", b.intro);
     var formattedRole = HTMLheaderRole.replace("%data%", b.role);
     var formattedBioPic = HTMLbioPic.replace("%data%", b.bioPic);
+    var formattedSummary = HTMLheaderSummary.replace("%data%", b.shortSummary);
 
     $("#header-entry").append(formattedIntro);
     $("#header-entry").append(formattedRole);
+    $("#summary-entry").append(formattedSummary);
 
     // contact info
     var formattedEmail = HTMLemail.replace("%data%", b.contacts.email);
@@ -134,16 +137,6 @@ function displayBio(b) {
 }
 
 displayBio(bio);
-
-function displaySkills(s) {
-    for (var i = 0; i < s.length; i++) {
-        var formattedSkills = HTMLskills.replace("%data%", s[i]);
-        $("#skills-entry").append(formattedSkills);
-    }
-}
-
-displaySkills(bio.skills);
-
 
 work.display = function() {
     for (var i = 0; i < work.jobs.length; i++) {
@@ -170,6 +163,10 @@ $("#work-icon-entry").append(HTMLworkIcon);
 // projects
 function displayProjects(p) {
     for (var i = 0; i < p.length; i++) {
+
+        var formattedProImage = HTMLprojectImage.replace("%data%", p[i].images);
+        $("#project-entry").append(formattedProImage);
+
         var formattedProTitle = HTMLprojectTitle.replace("%data%", p[i].title);
         $("#project-entry").append(formattedProTitle);
 
@@ -178,12 +175,9 @@ function displayProjects(p) {
 
         var formattedProDescription = HTMLprojectDescription.replace("%data%", p[i].description);
         $("#project-entry").append(formattedProDescription);
-
-        var formattedProImage = HTMLprojectImage.replace("%data%", p[i].images);
-        $("#project-entry").append(formattedProImage);
     }
 }
-displayProjects(projects.projects);
+displayProjects(project.projects);
 
 // education
 education.display = function() {
@@ -204,7 +198,7 @@ education.display = function() {
 education.display();
 
 $("#eduIcon").append(HTMLeducationIcon);
-$("#onlineIcon").append(HTMLonlineCourseIcon);
+$("#onlineIcon").prepend(HTMLonlineCourseIcon);
 
 // online courses
 function displayOnlineCourse(o) {
@@ -231,7 +225,7 @@ $("#footer-entry").append(HTMLfooter);
 
 
 // googleMaps
-// $("#mapDiv").append(googleMap);
+$("#googleMap").append(googleMap);
 
 
 // hr resize effect
@@ -244,10 +238,3 @@ $(document).ready(function() {
 	});
 });
 */
-
-$(window).resize(function () {
-    var viewportWidth = $(window).width();
-    if (viewportWidth <= 800) {
-        $("#work-icon-entry").remove();
-    }
-})

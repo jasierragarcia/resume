@@ -1,6 +1,8 @@
 var HTMLheaderIntro = '<h1 id="intro">%data%</h1>';
 var HTMLheaderRole = '<p id="role">%data%</p><hr id="hr-div">';
 
+var HTMLheaderSummary = '<p id="summary">%data%</p>';
+
 var HTMLnavHome = '<li class="nav-list"><a href="#" id="home-nav" class="nav-menu">Home</a></li>';
 var HTMLnavWork = '<li class="nav-list"><a href="#" id="work-nav" class="nav-menu">Work</a></li>';
 var HTMLnavProjects = '<li class="nav-list"><a href="#" id="projects-nav" class="nav-menu">Projects</a></li>';
@@ -24,22 +26,22 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="work-description"><br>%data%</p>';
 var HTMLworkIcon = '<span class="workIcon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>';
 
-var HTMLprojectTitle = '<a href="#" class="project-title">%data%</a>';
+var HTMLprojectTitle = '<li id="project-list"><a href="#" class="project-title">%data%</a>';
 var HTMLprojectDates = '<p class="date-text">%data%</p>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectImage = '<img src="%data%" id="project-image"></li>';
 
 var HTMLschoolName = '<a href="#" class="school-name">%data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text col">%data%</div>';
+var HTMLschoolDates = '<p class="date-text">%data%</p>';
+var HTMLschoolLocation = '<p class="location-text col">%data%</p>';
 var HTMLschoolMajor = '<p>Major: %data%</p>';
 var HTMLeducationIcon = '<span class="eduIcon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>';
 
 var HTMLonlineClasses = '<h3>Online Courses</h3>';
+var HTMLonlineSchool = '<a href="#" class="school-name">%data%</a>';
 var HTMLonlineTitle = '<p>%data%</p>';
-var HTMLonlineSchool = '<a href="#" class="online-title">%data%</a>';
 var HTMLonlineDates = '<p class="date-text">%data%</p>';
-var HTMLonlineURL = '<a href="#">%data%</a>';
+var HTMLonlineURL = '<a href="#" id="online-URL">%data%</a>';
 var HTMLonlineCourseIcon = '<span class="onlineIcon"><i class="fa fa-laptop" aria-hidden="true"></i></span>';
 
 var HTMLfooter = '<p>Coded by <a href="#" class="credit">Juan Sierra </a></p>';
