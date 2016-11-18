@@ -108,6 +108,7 @@ body {
 	top: 0;
 	width: 100%;
 	position: fixed;
+	z-index: 999;
 }
 
 #logo {
@@ -123,9 +124,14 @@ body {
   height: 80px;
   border-radius: 50px;
   margin: 10px;
-  padding: 31px;
+  padding: 22px;
   position: relative;
   left: 3%;
+}
+
+#logo-link {
+	text-decoration: none;
+	color: #F4F4F4;
 }
 
 #nav {
@@ -172,7 +178,11 @@ body {
 
 #main-page {
 	display: block;
-	background-color: #F4F4F4;
+	background-image: url("/images/main-pic.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
 }
 
 #header-entry {
@@ -182,6 +192,10 @@ body {
 
 #role {
 	font-size: 1.6em;
+}
+
+#hr-div {
+	border: 1px solid #fff;
 }
 
 #summary-section {
@@ -194,11 +208,12 @@ body {
 	white-space: nowrap;
 }
 
-#workExperience {
-	background-color: #B0D0D3;
+#summary-entry {
+	font-size: 20px;
 }
 
-#work-entry {
+#workExperience {
+	background-color: #B0D0D3;
 }
 
 .employer {

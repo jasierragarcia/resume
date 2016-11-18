@@ -11,6 +11,8 @@ var bio = {
         "location": "San Pedro Sula, Honduras"
     },
     "skills": ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "Git", "Gulp", "Terminal (Linux/MacOS)", "Responsive Design"],
+    "navLinks": ["#main-page", "#workExperience", "#education", "#contact-section"],
+    "navMenu": [HTMLnavHome, HTMLnavWork, HTMLnavProjects, HTMLnavEdu, HTMLnavContact],
     "shortSummary": "I have 1+ year(s) of experince with HTML5, CSS3, JavaScript, and jQuery. Through my basic foundation of Front-End Web Development, I was able to use front-end skills at a hackathon to help a non-profit organizaiton - Builders of Hope, they were in need of a software solution that would ease their process that can help local communities in developing countries buy and sell affordable housing, by increasing the availability of high-quality, safe, affordable workforce housing options.",
     "bioPic": "images/me.jpg"
 };
@@ -20,7 +22,7 @@ var education = {
         "name": "Northern Virginia Community College",
         "location": "Sterling, VA",
         "degree": "",
-        "majors": "Computer Science",
+        "majors": "General Studies",
         "dates": "August 2013 - December 2014",
         "url": "https://www.nvcc.edu/"
     }, {
@@ -105,11 +107,14 @@ var project = {
 };
 
 // nav-bar
-$("#nav-entry").append(HTMLnavHome);
-$("#nav-entry").append(HTMLnavWork);
-$("#nav-entry").append(HTMLnavProjects);
-$("#nav-entry").append(HTMLnavEdu);
-$("#nav-entry").append(HTMLnavContact);
+
+function insertLinks(navLi, navMe) {
+    for (var i = 0; i <= navLi.length; i++) {
+        $("#nav-entry").append(navMe[i].replace("#", navLi[i]));
+    }
+}
+
+insertLinks(bio.navLinks, bio.navMenu);
 
 // main page
 
