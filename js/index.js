@@ -233,13 +233,8 @@ $("#footer-entry").append(HTMLfooter);
 $("#googleMap").append(googleMap);
 
 
-// hr resize effect
-/*
-$(document).ready(function() {
-	$("#hr-div").animate({
-		width: "100%"
-	}, 1500, function() {
-		// complete effect
-	});
+// responsive nav-bar
+
+$(".hamburger").on("click", function () {
+    $("#nav").slideToggle();
 });
-*/

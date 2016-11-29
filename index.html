@@ -6,7 +6,7 @@
 		<title>Resume</title>
 		<link rel="icon" type="image/icon" href="/images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+		<link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<!-- google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -17,10 +17,17 @@
 				<div class="col" id="logo">
 					<h1 class="logo-text"><a href="#home" id="logo-link">JS</a></h1>
 				</div>
-				<nav class="col" id="nav">
-					<ul id="nav-entry">
-					</ul>
-				</nav>
+				<div class="hamburger col">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<div class="col">
+					<nav id="nav">
+						<ul id="nav-entry">
+						</ul>
+					</nav>
+				</div>
 			</header>
 			<main id="main-page" class="row cf section">
 			<section class="col" id="header-entry">
@@ -84,6 +91,8 @@
 		<script src="js/jQuery.js"></script>
 		<script src="js/helper.js"></script>
 		<script src="js/index.js"></script>
+		<script src="http://localhost:35729/livereload.js"></script>
+
 
 		<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC4hny-ZaWwJFUrOshRB4dAH8c-RUrvjrk" async></script>
 		<!-- font awesome icons -->
