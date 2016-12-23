@@ -4,10 +4,10 @@ var HTMLheaderRole = '<div id="role">%data%</div><hr id="hr-div">';
 
 var HTMLheaderSummary = '<p id="summary">%data%</p>';
 
-var HTMLnavHome = '<li class="nav-list"><a href="#" id="work-nav" class="nav-link">Home</a></li>';
-var HTMLnavProjects = '<li class="nav-list"><a href="#" id="projects-nav" class="nav-link">Projects</a></li>';
-var HTMLnavEdu = '<li class="nav-list"><a href="#" id="edu-nav" class="nav-link">Education</a></li>';
-var HTMLnavContact = '<li class="nav-list"><a href="#" id="contact-nav" class="nav-link">Contact Me</a></li>';
+var HTMLnavHome = '<li class="nav-list"><a href="#" id="work-nav" class="nav-link">%data%</a></li>';
+var HTMLnavProjects = '<li class="nav-list"><a href="#" id="projects-nav" class="nav-link">%data%</a></li>';
+var HTMLnavEdu = '<li class="nav-list"><a href="#" id="edu-nav" class="nav-link">%data%</a></li>';
+var HTMLnavContact = '<li class="nav-list"><a href="#" id="contact-nav" class="nav-link">%data%</a></li>';
 
 var HTMLemail = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
 var HTMLtwitter = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';

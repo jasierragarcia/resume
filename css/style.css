@@ -68,6 +68,14 @@ body {
     font-size: 1.2em;
 }
 
+#bio-entry {
+    width: 50%;
+}
+
+#summary {
+    width: 50%;
+}
+
 #social-entry {
     list-style: none;
 }

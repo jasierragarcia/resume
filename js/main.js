@@ -2,7 +2,7 @@ var bio = {
     "name"  : "Juan Sierra",
     "role"  : "Front End Web Developer",
     "bioPic" : "images/me.jpg",
-    "shortSummary" : "",
+    "bioSummary" : "Learning Front End Web through Udacity and Full Stack Development through FreeCodeCamp",
     "contacts" : {
         "mobile" : "571-271-5709",
         "email" : "jasierra.garcia@gmail.com",
@@ -17,6 +17,12 @@ var bio = {
         "JavaScript",
         "Git",
         "Responsive Design"
+    ],
+    "navMenu" : [
+        "Home",
+        "Projects",
+        "Education",
+        "Contact Me"
     ]
 };
 
@@ -124,17 +130,13 @@ var projects = {
 
 // bio section
 
-
-
-$("#social-entry").append()
-
-function displayBio(b) {
+function sideNav(b) {
     // bio
     var formattedPic = HTMLbioPic.replace("%data%", b.bioPic);
     var formattedName = HTMLheaderName.replace("%data%", b.name);
     var formattedRole = HTMLheaderRole.replace("%data%", b.role);
+    var formattedSummary = HTMLheaderSummary.replace("%data%", b.bioSummary);
 
-    $("#intro-head").prepend(formattedPic);
     $("#intro-entry").append(formattedName);
     $("#intro-entry").append(formattedRole);
 
@@ -149,6 +151,21 @@ function displayBio(b) {
     $("#social-entry").append(formattedGithub);
     $("#social-entry").append(formattedLinkedin);
 
+    // nav menu
+    var navArr = [
+        HTMLnavHome,
+        HTMLnavProjects,
+        HTMLnavEdu,
+        HTMLnavContact
+    ];
+
+    var menu = b.navMenu;
+
+    if (!$(navArr).hasClass("nav-link")) {
+        for (var i = 0; i < menu.length; i++) {
+            
+        }
+    }
 }
 
-displayBio(bio);
+sideNav(bio);
