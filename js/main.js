@@ -139,6 +139,8 @@ function sideNav(b) {
 
     $("#intro-entry").append(formattedName);
     $("#intro-entry").append(formattedRole);
+    
+    $("#bio-entry").append(formattedSummary);
 
     // social
     var formattedEmail = HTMLemail.replace("#", b.contacts.email);
