@@ -3,7 +3,6 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid orange;
 }
 
 html, body, .container {
@@ -12,6 +11,7 @@ html, body, .container {
 
 .container {
     width: 1200px;
+    margin: auto;
 }
 
 .row {
@@ -44,6 +44,7 @@ body {
 .side-nav {
     float: left;
     height: 100%;
+    min-width: 20%;
 }
 
 #intro-head {
@@ -69,11 +70,14 @@ body {
 }
 
 #bio-entry {
-    width: 50%;
+    width: 200px;
+    margin: auto;
 }
 
 #summary {
-    width: 50%;
+    padding-top: 45%;
+    width: 200px;
+    letter-spacing: 1px;
 }
 
 #social-entry {
