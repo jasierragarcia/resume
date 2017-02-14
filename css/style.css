@@ -1,101 +1,62 @@
+/*
+CSS Style guide
+
+// layout
+.container
+
+grid:
+.columns
+    .column
+
+    use flexbox!
+
+columns can be centered with
+    .centered
+//////////////////
+
+// typography
+make a paragraph stand out by adding:
+    .lead
+
+//////////////
+
+// buttons
+
+use standard:
+    .btn
+always specify the type for the button
+
+when using the <a> always add
+role="button" for accesibility
+
+button sizes
+    default:
+    .btn
+
+    smaller:
+    .btn-sm
+
+Colors:
+    Primary is green:
+    .btn-primary
+
+    Danger is red:
+    .btn-danger
+
+    Outline are blue:
+    .btn-outline
+
+    Disabled state:
+    .disabled
+
+*/
+
 * {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-html, body, .container {
-    height: 100%;
-}
-
 .container {
-    width: 1200px;
+    width: 980px;
     margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.col {
-    flex: 1;
-    margin: .6em;
-    padding: .6em;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
-.container {
-    background-color: #fff;
-    color: #353535;
-}
-
-/* NOTE: try this later
-.side-nav, .work, .projects, .education, .contact {
-    height: 100%;
-}
-*/
-
-.side-nav {
-    float: left;
-    height: 100%;
-    min-width: 20%;
-}
-
-#intro-head {
-    margin: auto;
-    padding: 0;
-    text-align: center;
-}
-
-.bioPic {
-    height: 45%;
-    width: 45%;
-    border-radius: 50%;
-
-}
-
-#name {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#role {
-    font-size: 1.2em;
-}
-
-#bio-entry {
-    width: 200px;
-    margin: auto;
-}
-
-#summary {
-    padding-top: 45%;
-    width: 200px;
-    letter-spacing: 1px;
-}
-
-#social-entry {
-    list-style: none;
-}
-
-.social-li {
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 10px;
-}
-
-.social-link {
-    color: #353535;
-    transition: color .5s ease-in;
-}
-
-.social-link:hover {
-    color: #5BC3EB;
-    transition: color .5s ease-out;
 }
