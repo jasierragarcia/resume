@@ -1,6 +1,6 @@
 var HTMLbioPic = '<img src="%data%" class="bioPic">';
 var HTMLheaderName = '<div id="name">%data%</div>';
-var HTMLheaderRole = '<div id="role">%data%</div><hr id="hr-div">';
+var HTMLheaderRole = '<div id="role">%data%</div>';
 
 var HTMLheaderSummary = '<p id="summary">%data%</p>';
 
