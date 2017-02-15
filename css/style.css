@@ -54,7 +54,6 @@ Colors:
 * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid cadetblue;
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
 }
@@ -63,12 +62,14 @@ html, body, .container {
     height: 100%;
 }
 
-html {
+img {
+    max-width: 100%;
 }
 
 .container {
     width: 980px;
     margin: auto;
+    z-index: -1;
 }
 
 .columns {
@@ -84,14 +85,16 @@ html {
 }
 
 .side-nav {
-    background: lightcoral;
     float: left;
     height: 100%;
+    padding-top: 10%;
 }
 
 #intro-head {
     max-height: 30%;
-    background-color: lawngreen;
+    max-height: 15%;
+    margin: 0;
+    padding: 0;
 }
 
 #name {
@@ -102,12 +105,14 @@ html {
     font-size: 1.3em;
 }
 
-#summary {
-    
-}
-
 .nav-menu {
     max-height: 25%;
+    position: relative;
+}
+
+#menu-entry {
+    margin: 0;
+    padding: 0;
 }
 
 .nav-li {
@@ -116,12 +121,15 @@ html {
     font-size: 1.1em;
 }
 
+
+
 #social-entry {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .social-li {
     display: inline-block;
-    padding: 5px;
     font-size: 1.6em;
 }
 
