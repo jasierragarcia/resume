@@ -54,9 +54,32 @@ Colors:
 * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border: 1px solid cadetblue;
+}
+
+html, body, .container {
+    height: 100%;
 }
 
 .container {
     width: 980px;
     margin: auto;
+}
+
+.columns {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.column {
+	flex: 1;
+	margin: .6em;
+	padding: .6em;
+}
+
+.side-nav {
+    position: fixed;
+    top: 30%;
+    background: lightcoral;
 }
