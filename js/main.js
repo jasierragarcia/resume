@@ -2,7 +2,7 @@ var bio = {
     "name"  : "Juan Sierra",
     "role"  : "Front End Web Developer",
     "bioPic" : "images/me.jpg",
-    "bioSummary" : "Learning Front End Web through Udacity and Full Stack Development through FreeCodeCamp",
+    "bioSummary" : "Avid Front End Developer",
     "contacts" : {
         "mobile" : "571-271-5709",
         "email" : "jasierra.garcia@gmail.com",
@@ -165,7 +165,8 @@ function sideNav(b) {
 
     if (!$(navArr).hasClass("nav-link")) {
         for (var i = 0; i < menu.length; i++) {
-            
+            formattedNav = navArr[i].replace("%data%", menu[i]);
+            $("#menu-entry").append(formattedNav);
         }
     }
 }
