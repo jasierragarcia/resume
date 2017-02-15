@@ -55,6 +55,7 @@ Colors:
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid cadetblue;
+    text-decoration: none;
 }
 
 html, body, .container {
@@ -79,7 +80,33 @@ html, body, .container {
 }
 
 .side-nav {
-    position: fixed;
-    top: 30%;
     background: lightcoral;
+    top: 30%;
+    float: left;
+    position: fixed;
 }
+
+#intro-head {
+    max-height: 30%;
+    background-color: lawngreen;
+}
+
+.nav-menu {
+    max-height: 25%;
+}
+
+.nav-li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+#social-entry {
+    list-style: none;
+}
+.social-li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.6em;
+}
+
