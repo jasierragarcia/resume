@@ -109,21 +109,21 @@ var projects = {
             "dates" : "November 2016",
             "description" : "",
             "url" : "https://github.com/jasierragarcia/ecomanyatta",
-            "images" : ""
+            "images" : "images/fishing.jpg"
         },
         {
             "title" : "Econ Manyatta",
             "dates" : "November 2016",
             "description" : "",
             "url" : "https://github.com/jasierragarcia/ecomanyatta",
-            "images" : ""
+            "images" : "images/yellow.jpg"
         },
         {
             "title" : "Econ Manyatta",
             "dates" : "November 2016",
             "description" : "",
             "url" : "https://github.com/jasierragarcia/ecomanyatta",
-            "images" : ""
+            "images" : "images/ocean.jpg"
         }
     ]
 }
@@ -163,7 +163,7 @@ function sideNav(b) {
 
     var menu = b.navMenu;
 
-    if (!$(navArr).hasClass("nav-link")) {
+    if (!$(navArr).hasClass("nav-li")) {
         for (var i = 0; i < menu.length; i++) {
             formattedNav = navArr[i].replace("%data%", menu[i]);
             $("#menu-entry").append(formattedNav);
@@ -172,3 +172,12 @@ function sideNav(b) {
 }
 
 sideNav(bio);
+
+function displayProjects(p) {
+    for (var i = 0; i < p.length; i++) {
+        formattedImage = HTMLprojectImage.replace("%data%", p[i].images);
+        $("#project-entry").append(formattedImage);
+    }   
+}
+
+displayProjects(projects.project);
