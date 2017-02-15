@@ -2,11 +2,11 @@ var bio = {
     "name"  : "Juan Sierra",
     "role"  : "Front End Web Developer",
     "bioPic" : "images/me.jpg",
-    "bioSummary" : "Avid Front End Developer",
+    "bioSummary" : "Coffee drinker, gamer, and nerd of the web",
     "contacts" : {
         "mobile" : "571-271-5709",
         "email" : "jasierra.garcia@gmail.com",
-        "github" : "https ://github.com/jasierragarcia",
+        "github" : "https ://github.com/juan-sierra",
         "linkedin" : "https ://www.linkedin.com/in/juan-a-sierra-g-368b84100",
         "twitter" : "https://twitter.com/jasierragarcia",
         "location" : "US, Virginia"

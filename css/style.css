@@ -56,10 +56,14 @@ Colors:
     box-sizing: border-box;
     border: 1px solid cadetblue;
     text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
 }
 
 html, body, .container {
     height: 100%;
+}
+
+html {
 }
 
 .container {
@@ -81,14 +85,25 @@ html, body, .container {
 
 .side-nav {
     background: lightcoral;
-    top: 30%;
     float: left;
-    position: fixed;
+    height: 100%;
 }
 
 #intro-head {
     max-height: 30%;
     background-color: lawngreen;
+}
+
+#name {
+    font-size: 1.6em;
+}
+
+#role {
+    font-size: 1.3em;
+}
+
+#summary {
+    
 }
 
 .nav-menu {
