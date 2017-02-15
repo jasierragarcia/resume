@@ -9,10 +9,10 @@ var HTMLnavProjects = '<li class="nav-li"><a href="#" id="projects-nav" class="n
 var HTMLnavEdu = '<li class="nav-li"><a href="#" id="edu-nav" class="nav-link">%data%</a></li>';
 var HTMLnavContact = '<li class="nav-li"><a href="#" id="contact-nav" class="nav-link">%data%</a></li>';
 
-var HTMLemail = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
-var HTMLtwitter = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
-var HTMLgithub = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
-var HTMLlinkedin = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
+var HTMLemail = '<li class="social-li"><a href="#" class="social-link" id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
+var HTMLtwitter = '<li class="social-li"><a href="#" class="social-link" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
+var HTMLgithub = '<li class="social-li"><a href="#" class="social-link" id="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
+var HTMLlinkedin = '<li class="social-li"><a href="#" class="social-link" id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
 var HTMLblog = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-rss" aria-hidden="true"></i></a></li>';
 
 var HTMLskills = '<li class="skills">%data%</li>';
@@ -78,10 +78,3 @@ $(document).click(function(loc) {
   // your code goes here!
 });
 
-
-
-/*
-This is the fun part. Here's where we generate the custom Google Map for the website.
-See the documentation below for more details.
-https://developers.google.com/maps/documentation/javascript/reference
-*/
