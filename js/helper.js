@@ -1,8 +1,8 @@
 var HTMLbioPic = '<img src="%data%" class="bioPic">';
 var HTMLheaderName = '<div id="name">%data%</div>';
-var HTMLheaderRole = '<div id="role">%data%</div>';
+var HTMLheaderRole = '<div id="role">%data%</div><hr class="hr">';
 
-var HTMLheaderSummary = '<p id="summary">%data%</p>';
+var HTMLheaderSummary = '<li id="summary">%data%</li>';
 
 var HTMLnavHome = '<li class="nav-li"><a href="#" id="work-nav" class="nav-link">%data%</a></li>';
 var HTMLnavProjects = '<li class="nav-li"><a href="#" id="projects-nav" class="nav-link">%data%</a></li>';
