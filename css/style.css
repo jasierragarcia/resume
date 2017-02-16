@@ -56,6 +56,13 @@ Colors:
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
+    color: #254441;
+}
+
+.hr {
+    border-style: none;
+    border: 1px solid;
+    width: 100%;
 }
 
 html, body, .container {
@@ -88,6 +95,7 @@ img {
     float: left;
     height: 100%;
     padding-top: 10%;
+    clear: both;
 }
 
 #intro-head {
@@ -97,17 +105,27 @@ img {
     padding: 0;
 }
 
+#intro-entry {
+    text-align: right;
+}
+
 #name {
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 #role {
     font-size: 1.3em;
 }
 
+#bio-entry {
+    text-align: center;
+}
+
 .nav-menu {
     max-height: 25%;
     position: relative;
+    padding-left: 5%;
 }
 
 #menu-entry {
@@ -127,9 +145,11 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 .social-li {
     display: inline-block;
     font-size: 1.6em;
+    padding: 20px;
 }
 
