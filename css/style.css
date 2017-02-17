@@ -57,6 +57,7 @@ Colors:
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
     color: #254441;
+    border: 1px solid orange;
 }
 
 .hr {
@@ -90,12 +91,12 @@ img {
 	margin: .6em;
 	padding: .6em;
 }
+.content {
+    float: right;
+    overflow: hidden;
+}
 
 .side-nav {
-    float: left;
-    height: 100%;
-    padding-top: 10%;
-    clear: both;
 }
 
 #intro-head {
@@ -106,7 +107,7 @@ img {
 }
 
 #intro-entry {
-    text-align: right;
+
 }
 
 #name {
@@ -118,14 +119,8 @@ img {
     font-size: 1.3em;
 }
 
-#bio-entry {
-    text-align: center;
-}
-
 .nav-menu {
     max-height: 25%;
-    position: relative;
-    padding-left: 5%;
 }
 
 #menu-entry {
