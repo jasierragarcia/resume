@@ -2,7 +2,12 @@ var bio = {
     "name"  : "Juan Sierra",
     "role"  : "Front End Web Developer",
     "bioPic" : "images/me.jpg",
-    "bioSummary" : "Coffee drinker, gamer, and nerd of the web",
+    "bioSummary" : "Avid learner, focusing on minal UIs and noteworthy UXs",
+    "funFacts" : [
+        "Coffee drinker",
+        "Gamer",
+        "Nerd"
+    ],
     "contacts" : {
         "mobile" : "571-271-5709",
         "email" : "jasierra.garcia@gmail.com",
@@ -17,12 +22,6 @@ var bio = {
         "JavaScript",
         "Git",
         "Responsive Design"
-    ],
-    "navMenu" : [
-        "Home",
-        "Projects",
-        "Education",
-        "Contact Me"
     ]
 };
 
@@ -128,56 +127,16 @@ var projects = {
     ]
 }
 
-// bio section
+// display content for sidebar
+const NAV_ITEMS = [
+    "Projects",
+    "Work",
+    "Education",
+    "Contact"
+];
 
-function sideNav(b) {
-    // bio
-    var formattedPic = HTMLbioPic.replace("%data%", b.bioPic);
-    var formattedName = HTMLheaderName.replace("%data%", b.name);
-    var formattedRole = HTMLheaderRole.replace("%data%", b.role);
-    var formattedSummary = HTMLheaderSummary.replace("%data%", b.bioSummary);
-
-    $("#intro-entry").append(formattedName);
-    $("#intro-entry").append(formattedRole);
-    
-    $("#bio-entry").append(formattedSummary);
-
-    // social
-    var formattedEmail = HTMLemail.replace("#", b.contacts.email);
-    var formattedTwitter = HTMLtwitter.replace("#", b.contacts.twitter);
-    var formattedGithub = HTMLgithub.replace("#", b.contacts.github);
-    var formattedLinkedin = HTMLlinkedin.replace("#", b.contacts.linkedin);
-
-    $("#social-entry").append(formattedEmail);
-    $("#social-entry").append(formattedTwitter);
-    $("#social-entry").append(formattedGithub);
-    $("#social-entry").append(formattedLinkedin);
-
-    // nav menu
-    var navArr = [
-        HTMLnavHome,
-        HTMLnavProjects,
-        HTMLnavEdu,
-        HTMLnavContact
-    ];
-
-    var menu = b.navMenu;
-
-    if (!$(navArr).hasClass("nav-li")) {
-        for (var i = 0; i < menu.length; i++) {
-            formattedNav = navArr[i].replace("%data%", menu[i]);
-            $("#menu-entry").append(formattedNav);
-        }
-    }
+function sideBar(items) {
+    console.log(items);
 }
 
-sideNav(bio);
-
-function displayProjects(p) {
-    for (var i = 0; i < p.length; i++) {
-        formattedImage = HTMLprojectImage.replace("%data%", p[i].images);
-        $("#project-entry").append(formattedImage);
-    }   
-}
-
-displayProjects(projects.project);
+sideBar(NAV_ITEMS);
