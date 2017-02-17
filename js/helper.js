@@ -2,12 +2,12 @@ var HTMLbioPic = '<img src="%data%" class="bioPic">';
 var HTMLheaderName = '<div id="name">%data%</div>';
 var HTMLheaderRole = '<div id="role">%data%</div><hr class="hr">';
 
-var HTMLheaderSummary = '<li id="summary">%data%</li>';
+var HTMLheaderSummary = '<p class="bio">%data%</p>';
 
-var HTMLnavHome = '<li class="nav-li"><a href="#" id="work-nav" class="nav-link">%data%</a></li>';
-var HTMLnavProjects = '<li class="nav-li"><a href="#" id="projects-nav" class="nav-link">%data%</a></li>';
-var HTMLnavEdu = '<li class="nav-li"><a href="#" id="edu-nav" class="nav-link">%data%</a></li>';
-var HTMLnavContact = '<li class="nav-li"><a href="#" id="contact-nav" class="nav-link">%data%</a></li>';
+var HTMLprojectHead = "<h2>Projects</h2>";
+var HTMLnavProjects = '<li class="nav-li"><a href="#" id="#" class="nav-link">%data%</a></li>';
+var HTMLnavEdu = '<li class="nav-li"><a href="#" id="#" class="nav-link">%data%</a></li>';
+var HTMLnavContact = '<li class="nav-li"><a href="#" id="#" class="nav-link">%data%</a></li>';
 
 var HTMLemail = '<li class="social-li"><a href="#" class="social-link" id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>';
 var HTMLtwitter = '<li class="social-li"><a href="#" class="social-link" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
@@ -23,7 +23,6 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="work-description"><br>%data%</p>';
-var HTMLworkIcon = '<span class="workIcon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>';
 
 var HTMLprojectHead = "<h2>Projects</h2>";
 var HTMLprojectTitle = '<li id="project-list"><a href="#" class="project-title">%data%</a>';
@@ -36,7 +35,6 @@ var HTMLschoolName = '<a href="#" class="school-name">%data%</a>';
 var HTMLschoolDates = '<p class="date-text">%data%</p>';
 var HTMLschoolLocation = '<p class="location-text col">%data%</p>';
 var HTMLschoolMajor = '<p>Major: %data%</p>';
-var HTMLeducationIcon = '<span class="eduIcon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>';
 
 
 var HTMLonlineHead = '<h3>Online Courses</h3>';
@@ -51,30 +49,3 @@ var HTMLfooter = '<p>Coded by <a href="#" class="credit">Juan Sierra </a></p>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
-
-
-/*
-The Internationalize Names challenge found in the lesson Flow Control from JavaScript Basics requires you to create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
-$(document).ready(function() {
-  $('button').click(function() {
-    var $name = $('#name');
-    var iName = inName($name.text()) || function() {};
-    $name.html(iName);
-  });
-});
-
-var clickLocations = [];
-
-function logClicks(x, y) {
-  clickLocations.push({
-    x: x,
-    y: y
-  });
-  console.log('x location: ' + x + '; y location: ' + y);
-}
-
-$(document).click(function(loc) {
-  // your code goes here!
-});
-
