@@ -104,23 +104,23 @@ var education = {
 var projects = {
     "project" : [
         {
-            "title" : "Econ Manyatta",
+            "title" : "Project 1",
             "dates" : "November 2016",
-            "description" : "",
+            "description" : "comming soon",
             "url" : "https://github.com/jasierragarcia/ecomanyatta",
             "images" : "images/fishing.jpg"
         },
         {
-            "title" : "Econ Manyatta",
-            "dates" : "November 2016",
-            "description" : "",
+            "title" : "Project 2",
+            "dates" : "December 2016",
+            "description" : "comming soon",
             "url" : "https://github.com/jasierragarcia/ecomanyatta",
             "images" : "images/yellow.jpg"
         },
         {
-            "title" : "Econ Manyatta",
-            "dates" : "November 2016",
-            "description" : "",
+            "title" : "Project 3",
+            "dates" : "January 2017",
+            "description" : "comming soon",
             "url" : "https://github.com/jasierragarcia/ecomanyatta",
             "images" : "images/ocean.jpg"
         }
@@ -134,9 +134,72 @@ const NAV_ITEMS = [
     "Education",
     "Contact"
 ];
+var navList = [
+    HTMLnavProjects,
+    HTMLnavWork,
+    HTMLnavEdu,
+    HTMLnavContact
+];
 
-function sideBar(items) {
-    console.log(items);
+var socialList = [
+    HTMLemail,
+    HTMLgithub,
+    HTMLlinkedin
+];
+
+// sider bar component
+function sideBar(items, navLi, socialLi) {
+    var i = 0;
+    if(!$(navLi).hasClass("nav-li")) {
+        for (i = i; i < items.length; i++) {
+            var formattedSide = navLi[i].replace("%data%", items[i]);
+            console.log(formattedSide);
+            $(".nav-ul").append(formattedSide);
+        }
+    }
+    // social section
+    for (var i = 0; i < socialLi.length; i++) {
+        $(".social-ul").append(socialLi[i]);
+    }
 }
+sideBar(NAV_ITEMS, navList, socialList);
 
-sideBar(NAV_ITEMS);
+// bio component
+function bioCo(bio) {
+    var formattedName = HTMLheaderName.replace("%data%", bio.name);
+    $("#name-role").append(formattedName);
+
+    var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+    $("#name-role").append(formattedRole);
+}
+bioCo(bio);
+
+// projects component
+function projectCo(project) {
+    $("#project").append(HTMLprojectHead);
+    
+    for (var i = 0; i < project.length; i++) {
+        var formattedPTitle = HTMLprojectTitle.replace("%data%", project[i].title);
+        $("#project").append(formattedPTitle);
+        
+        var formattedPDate = HTMLprojectDates.replace("%data%", project[i].dates);
+        $("#project").append(formattedPDate);
+
+        var formattedPDescription = HTMLprojectDescription.replace("%data%", project[i].description);
+        $("#project").append(formattedPDescription);
+    }
+}
+projectCo(projects.project);
+
+// work component
+function workCo(exp) {
+    $(".work").prepend(HTMLworkHead);
+    for (var i = 0; i < exp.length; i++) {
+        var formattedEmp = HTMLworkEmployer.replace("%data%", exp[i].employer);
+        $("#work-data").append(formattedEmp);
+
+        var formmattedDate = HTMLworkDates.replace("%data%", exp[i].dates);
+        $("#work-data").append(formmattedDate);
+    }
+}
+workCo(work.jobs);
