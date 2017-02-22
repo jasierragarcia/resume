@@ -78,23 +78,26 @@ body {
     background-color: #F4F4F4;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
-
+/* wrapper/container */
 .wrapper {
     display: flex;
     min-height: 100vh;
 }
 
-.socail-ul {
-    flex-direction: column;
-    list-style: none;
-}
-.social-li {
-    display:inline-block;
-}
-
+/* side bar */
 .sidebar {
     top: 0;
     left: 0;
     width: 20%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* content */
+.content {
+    flex: 1 1 100%;
+    flex-direction: column;
+    border: 2px solid lightcoral;
+    position: relative;
 }
