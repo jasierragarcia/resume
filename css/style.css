@@ -81,14 +81,12 @@ body {
 /* wrapper/container */
 .wrapper {
     display: flex;
-    min-height: 100vh;
 }
 
 /* side bar */
 .sidebar {
     top: 0;
     left: 0;
-    width: 20%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -100,4 +98,5 @@ body {
     flex-direction: column;
     border: 2px solid lightcoral;
     position: relative;
+    min-height: 100vh;
 }
