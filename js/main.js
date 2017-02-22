@@ -95,7 +95,7 @@ var education = {
         {
             "title" : "Full Stack Web Development",
             "school" : "FreeCodeCamp",
-            "dates" : "July 2016 - Present",
+            "dates" : "January 2017 - Present",
             "url" : "https://www.freecodecamp.com/"
         }
     ]
@@ -203,3 +203,19 @@ function workCo(exp) {
     }
 }
 workCo(work.jobs);
+
+// education component
+function EduCo(sC, oC) {
+    $("#edu-data").prepend(HTMLeducationHead);
+    for (var key in sC) {
+        var formattedName = HTMLschoolName.replace("%data%", sC[key].name);
+        $("#edu-data").append(formattedName);
+
+        var formattedDates = HTMLschoolName.replace("%data%", sC[key].dates);
+        $("#edu-data").append(formattedDates);
+
+        var formattedLocation = HTMLschoolName.replace("%data%", sC[key].location);
+        $("#edu-data").append(formattedLocation);
+    }
+}
+EduCo(education.schools, education.onlineCourses);
