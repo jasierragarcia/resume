@@ -30,13 +30,13 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="work-description"><br>%data%</p>';
 
 var HTMLeducationHead = "<h3>Education</h3>";
-var HTMLschoolName = '<a href="#" class="school-name">%data%</a>';
-var HTMLschoolDates = '<p class="date-text">%data%</p>';
-var HTMLschoolLocation = '<p class="location-text col">%data%</p>';
+var HTMLschoolName = '<div href="#" class="school-name">%data%</div>';
+var HTMLschoolDates = '<span class="date-text">%data%</span>';
+var HTMLschoolLocation = '<div class="location-text col">%data%</div>';
 var HTMLschoolMajor = '<p>Major: %data%</p>';
 
 
-var HTMLonlineHead = '<h4>Online Courses</h4>';
+var HTMLonlineHead = '<h3>Online Courses</h3>';
 var HTMLonlineSchool = '<a href="#" class="school-name">%data%</a>';
 var HTMLonlineTitle = '<p>%data%</p>';
 var HTMLonlineDates = '<p class="date-text">%data%</p>';
