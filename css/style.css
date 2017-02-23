@@ -71,32 +71,28 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
     color: #4A4A48;
+        border: 2px solid coral;
     
 }
 
 body {
     background-color: #F4F4F4;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 0;
+    margin: 0;
 }
 /* wrapper/container */
 .wrapper {
     display: flex;
+    flex-flow: row wrap;
 }
 
 /* side bar */
 .sidebar {
-    top: 0;
-    left: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 /* content */
 .content {
-    flex: 1 1 100%;
-    flex-direction: column;
-    border: 2px solid lightcoral;
-    position: relative;
-    min-height: 100vh;
+    margin: 0;
 }
