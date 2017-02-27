@@ -71,28 +71,85 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
     color: #4A4A48;
-        border: 2px solid coral;
     
 }
 
 body {
     background-color: #F4F4F4;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 980px;
+    margin: auto;
+}
+.col {
+    flex: 1;
+}
+.hr {
+    border-style: none;
+    border: 2px solid #5BC3EB;
+    border-radius: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    border: 2px solid deepskyblue;
+    height: 100%;
+}
+
+.nav-container {
+    align-self: center;
+    padding-top: 20px;
+}
+
+#name {
+    font-size: 1.3em;
+}
+
+#role {
+    font-size: 1.1em;
+}
+.nav-ul {
     padding: 0;
     margin: 0;
+    padding-bottom: 30px;
 }
-/* wrapper/container */
-.wrapper {
+
+.nav-li {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.social-ul {
+    padding: 0;
     display: flex;
-    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
 }
 
-/* side bar */
-.sidebar {
-    
+.social-li {
+    padding: 10px;
 }
 
-/* content */
+.fa {
+    font-size: 1.8em !important;
+}
+
 .content {
-    margin: 0;
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    border: 2px solid orangered;
+    margin-left: 210px;
+}
+
+/* sections */
+.projects {
+    display: flex;
+    flex: 1 1 100%;
+    border: 5px solid greenyellow;
+    justify-content: space-between;
+    min-height: 100%;
 }
