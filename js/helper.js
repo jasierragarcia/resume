@@ -15,7 +15,7 @@ var HTMLgithub = '<li class="social-li"><a href="#" class="social-link" id="gith
 var HTMLlinkedin = '<li class="social-li"><a href="#" class="social-link" id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
 var HTMLblog = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-rss" aria-hidden="true"></i></a></li>';
 
-var HTMLprojectHead = "<h1>Projects</h1>";
+var HTMLprojectHead = "<h1 id='pro-title'>Projects</h1>";
 var HTMLprojectTitle = '<div id="project-list">%data%</div>';
 var HTMLprojectDates = '<span class="date-text">%data%</span>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
