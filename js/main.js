@@ -183,9 +183,40 @@ displayProjects(projects.projects);
 var i = 0;
 work.display = function () {
     $(".w-title").append(HTMLworkHead)
+    work = work.jobs;
     for (key in work) {
-        
+        var formattedEmployer = HTMLworkEmployer.replace("%data%", work[key].employer);
+        var formattedDate = HTMLworkDates.replace("%data%", work[key].dates);
+        var formattedDescription = HTMLworkDescription.replace("%data%", work[key].description);
+        $(".w-content").append(formattedEmployer);
+        $(".w-content").append(formattedDate);
+        $(".w-content").append(formattedDescription);
+
     }
 };
 
 work.display();
+
+// education component
+education.display = function () {
+    $(".e-title").append(HTMLeducationHead);
+
+    education = education.schools;
+    courses = education.onlineCourses;
+    
+    var i = 0;
+    for (i = i; i < education.length; i++) {
+        var formattedName = HTMLschoolName.replace("%data%", education[i].name);
+        var formattedDate = HTMLschoolDates.replace("%data%", education[i].dates);
+        var formattedMajor = HTMLschoolMajor.replace("%data%", education[i].majors);
+
+        $(".e-content").append(formattedName);
+        $(".e-content").append(formattedDate);
+        $(".e-content").append(formattedMajor);
+    }
+
+    // online courses
+    $(".o-title").append(HTMLonlineHead);
+};
+
+education.display();
