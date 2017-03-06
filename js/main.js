@@ -1,139 +1,118 @@
 var bio = {
-    "name"  : "Juan Sierra",
-    "role"  : "Front End Web Developer",
-    "bioPic" : "images/me.jpg",
-    "bioSummary" : "Avid learner, focusing on minal UIs and noteworthy UXs",
-    "funFacts" : [
-        "Coffee drinker",
-        "Gamer",
-        "Nerd"
-    ],
+    "name" : "Juan Sierra",
+    "role" : "Front End Developer",
     "contacts" : {
         "mobile" : "571-271-5709",
         "email" : "jasierra.garcia@gmail.com",
-        "github" : "https ://github.com/juan-sierra",
-        "linkedin" : "https ://www.linkedin.com/in/juan-a-sierra-g-368b84100",
-        "twitter" : "https://twitter.com/jasierragarcia",
-        "location" : "US, Virginia"
+        "github" : "juan-sierra",
+        "twitter" : "jasierragarcia",
+        "location" : "Leesburg, VA"
     },
+    "welcomeMessage" : "Thank you for visiting my website",
     "skills" : [
         "HTML",
         "CSS",
         "JavaScript",
-        "Git",
-        "Responsive Design"
-    ]
-};
-
-var work = {
-    "jobs" : [
-        {
-            "employer" : "Trapollo",
-            "title" : "Tech Support / Customer Service Representative",
-            "location" : "Sterling, VA",
-            "dates" : "March 2016 - December 2016",
-            "description" : ""
-        },
-        {
-            "employer" : "Chief Technologies",
-            "title" : "Intern Junior Engineer / Contractor",
-            "location" : "Leesburg, VA",
-            "dates" : "June 2013 - December 2016",
-            "description" : ""
-        },
-        {
-            "employer" : "FedBiz IT Solutions",
-            "title" : "Inside Sales Representative",
-            "location" : "Leesburg, VA",
-            "dates" : "August 2015 - February 2016",
-            "description" : ""
-        },
-        {
-            "employer" : "Zenius Corporation",
-            "title" : "Junior Analyst",
-            "location" : "Leesburg, VA",
-            "dates" : "September 2015 - February 2016",
-            "description" : ""
-        }
-    ]
+        "Webpack",
+        "Linux",
+        "Bash / ZSH"
+    ],
+    "biopic" : "images/me.jpg"
 };
 
 var education = {
     "schools" : [
         {
             "name" : "Strayer University",
-            "location" : "Washington, DC",
-            "degree" : "Bachelor's Degree",
+            "location" : "Washington, D.C.",
+            "degree" : "B.S.",
             "majors" : "Computer Science",
-            "dates" : "January 2017 - TBD",
-            "url" : ""
+            "dates" : "January 2017 - Present",
+            "url" : "http://www.strayer.edu/"
         },
         {
-            "name" : "Tuscarora High School",
-            "location" : "US, Virginia",
-            "degree" : "HSDG",
+           "name" : "Tuscarora High School",
+            "location" : "Leesburg, VA",
+            "degree" : "GED",
             "majors" : "",
             "dates" : "August 2010 - June 2013",
-            "url" : ""
-        },
-        {
-            "name" : "Heritage High School",
-            "location" : "US, Virginia",
-            "degree" : "HSDG",
-            "majors" : "",
-            "dates" : "August 2009 - June 2010",
-            "url" : ""
+            "url" : "https://www.lcps.org/Tuscarora" 
         }
     ],
     "onlineCourses" : [
         {
-            "title" : "Front End Web Development Nanodegree",
+            "title" : "Front End Developer Nanodegree",
             "school" : "Udacity",
-            "dates": "July 2016 - Present",
+            "dates" : "July 2016 - Present",
             "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
         },
         {
             "title" : "Full Stack Web Development",
-            "school" : "FreeCodeCamp",
+            "school" : "Udacity",
             "dates" : "January 2017 - Present",
             "url" : "https://www.freecodecamp.com/"
         }
     ]
 };
 
-var projects = {
-    "project" : [
+var work = {
+    "jobs" : [
         {
-            "title" : "Project 1",
-            "dates" : "November 2016",
-            "description" : "comming soon",
-            "url" : "https://github.com/jasierragarcia/ecomanyatta",
-            "images" : "images/fishing.jpg"
+            "employer" : "Milestone Technologies",
+            "title" : "Data Center Technician",
+            "location" : "Loundoun, VA",
+            "dates" : "January 2017 - Present",
+            "description" : "Repair Facebook servers to put them back into produciton and create scripts to automate mundane tasks"
         },
         {
-            "title" : "Project 2",
-            "dates" : "December 2016",
-            "description" : "comming soon",
-            "url" : "https://github.com/jasierragarcia/ecomanyatta",
-            "images" : "images/yellow.jpg"
+            "employer" : "Chief-Technologies",
+            "title" : "Intern Junior Systems Engineer",
+            "location" : "Loundoun, VA",
+            "dates" : "June 2013 - December 2016",
+            "description" : "Learn programming principles, go to customer sites to perform network and IP phone installtions, assist engineers with technical tasks"
         },
         {
-            "title" : "Project 3",
-            "dates" : "January 2017",
-            "description" : "comming soon",
-            "url" : "https://github.com/jasierragarcia/ecomanyatta",
-            "images" : "images/ocean.jpg"
+            "employer" : "Trapollo",
+            "title" : "Contractor - Technical Support / Customer Service Respresentative",
+            "location" : "Sterling, VA",
+            "dates" : "February 2016 - December 2016",
+            "description" : "Perform and explain medical device installations via phone to elderly people and troubleshoot any issues they might encounter"
         }
     ]
-}
+};
 
-// display content for sidebar
-const NAV_ITEMS = [
-    "Projects",
-    "Work",
-    "Education",
-    "Contact"
+var projects = {
+    "projects" : [
+        {
+            "title" : "Coming Soon",
+            "dates" : "January 2017",
+            "description" : "Project in progress",
+            "images" : "images/art.jpg"
+        },
+        {
+            "title" : "Coming Soon",
+            "dates" : "January 2017",
+            "description" : "Project in progress",
+            "images" : "images/forest.jpg"
+        },
+        {
+            "title" : "Coming Soon",
+            "dates" : "January 2017",
+            "description" : "Project in progress",
+            "images" : "images/yellow.jpg"
+        }
+    ]
+};
+
+// sidebar component
+
+const NAV_ARR = [
+    "projects",
+    "work",
+    "education",
+    "contact"
 ];
+
 var navList = [
     HTMLnavProjects,
     HTMLnavWork,
@@ -141,81 +120,72 @@ var navList = [
     HTMLnavContact
 ];
 
-var socialList = [
-    HTMLemail,
-    HTMLgithub,
-    HTMLlinkedin
-];
+function sideBar(nav, list) {
+    for (var key in nav) {
+        var formattedNav = list[key].replace("%data%", nav[key]);
 
-// sider bar component
-function sideBar(items, navLi, socialLi) {
-    var i = 0;
-    if(!$(navLi).hasClass("nav-li")) {
-        for (i = i; i < items.length; i++) {
-            var formattedSide = navLi[i].replace("%data%", items[i]);
-            console.log(formattedSide);
-            $(".nav-ul").append(formattedSide);
-        }
-    }
-    // social section
-    for (var i = 0; i < socialLi.length; i++) {
-        $(".social-ul").append(socialLi[i]);
+        $(".nav-ul").append(formattedNav);
+
+        console.log(nav[key]);
     }
 }
-sideBar(NAV_ITEMS, navList, socialList);
+sideBar(NAV_ARR, navList);
 
 // bio component
-function bioCo(bio) {
-    var formattedName = HTMLheaderName.replace("%data%", bio.name);
-    $("#name-role").append(formattedName);
 
+bio.display = function () {
+    var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-    $("#name-role").append(formattedRole);
-}
-bioCo(bio);
+
+    $(".nav-head").append(formattedName);
+    $(".nav-head").append(formattedRole);
+
+    // social + contact
+    var socialList = [
+        HTMLgithub,
+        HTMLtwitter,
+        HTMLemail
+    ];
+    var socialLinks = [
+        "https://github.com/juan-sierra",
+        "https://twitter.com/jasierragarcia",
+        "mailto:jasierra.garcia@gmail.com"
+    ];
+    
+    for (var key in socialList) {
+        $(".social-ul").append(socialList[key].replace("#", socialLinks[key]));
+    }
+};
+
+bio.display();
 
 // projects component
-function projectCo(project) {
-    $("#project").append(HTMLprojectHead);
+
+function displayProjects(project) {
+
+    $(".p-title").append(HTMLprojectHead);
     
     for (var i = 0; i < project.length; i++) {
-        var formattedPTitle = HTMLprojectTitle.replace("%data%", project[i].title);
-        $("#project").append(formattedPTitle);
+        var formattedTitle = HTMLprojectTitle.replace("%data%", project[i].title);
+        var formattedDate = HTMLprojectDates.replace("%data%", project[i].dates);
+        var formattedDescription = HTMLprojectDescription.replace("%data%", project[i].description);
+        var formattedImage = HTMLprojectImage.replace("%data%", project[i].images);
+
+        // $(".p-content").append(formattedTitle);
+        $(".p-content").append(formattedImage);
+    }
+
+};
+
+displayProjects(projects.projects);
+
+// work exp component
+var i = 0;
+work.display = function () {
+    $(".w-title").append(HTMLworkHead)
+    for (key in work) {
         
-        var formattedPDate = HTMLprojectDates.replace("%data%", project[i].dates);
-        $("#project").append(formattedPDate);
-
-        var formattedPDescription = HTMLprojectDescription.replace("%data%", project[i].description);
-        $("#project").append(formattedPDescription);
     }
-}
-projectCo(projects.project);
+};
 
-// work component
-function workCo(exp) {
-    $(".work").prepend(HTMLworkHead);
-    for (var i = 0; i < exp.length; i++) {
-        var formattedEmp = HTMLworkEmployer.replace("%data%", exp[i].employer);
-        $("#work-data").append(formattedEmp);
-
-        var formmattedDate = HTMLworkDates.replace("%data%", exp[i].dates);
-        $("#work-data").append(formmattedDate);
-    }
-}
-workCo(work.jobs);
-
-// education component
-function EduCo(sC, oC) {
-    $("#edu-data").prepend(HTMLeducationHead);
-    for (var key in sC) {
-        var formattedName = HTMLschoolName.replace("%data%", sC[key].name);
-        $("#edu-data").append(formattedName);
-
-        var formattedDates = HTMLschoolName.replace("%data%", sC[key].dates);
-        $("#edu-data").append(formattedDates);
-
-        var formattedLocation = HTMLschoolName.replace("%data%", sC[key].location);
-        $("#edu-data").append(formattedLocation);
-    }
-}
-EduCo(education.schools, education.onlineCourses);
+work.display();
