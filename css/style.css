@@ -107,8 +107,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	margin-left: 200px;
 }
 
+/* projects section */
+
 .projects {
 	flex-direction: column;
+	height: 100vh;
 }
 
 .p-title {
@@ -122,10 +125,26 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	height: 200px;
 }
 
-.p-image:nth-child(even) {
-	margin-top: 15%;
+.p-content {
+	height: 90%;
 }
 
-.p-image:nth-child(2n+3) {
-	margin-top: 30%;
+.p-image:nth-child(even) {
+	margin-top: 20%;
+}
+
+.p-image:nth-child(1) {
+	margin-top: 40%;
+}
+
+/* work section */
+
+.work-exp {
+	height: 100vh;
+}
+
+/* education section */
+
+.education {
+	height: 100vh;
 }
