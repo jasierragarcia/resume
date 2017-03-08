@@ -41,7 +41,6 @@ var HTMLonlineSchool = '<a href="#" class="school-name">%data%</a>';
 var HTMLonlineTitle = '<p>%data%</p>';
 var HTMLonlineDates = '<p class="date-text">%data%</p>';
 var HTMLonlineURL = '<a href="#" id="online-URL">%data%</a>';
-var HTMLonlineCourseIcon = '<span class="onlineIcon"><i class="fa fa-laptop" aria-hidden="true"></i></span>';
 
 var HTMLfooter = "<hr id='footer-hr'>";
 var HTMLfooter = '<p>Coded by <a href="#" class="credit">Juan Sierra </a></p>';
