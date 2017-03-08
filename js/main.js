@@ -48,8 +48,8 @@ var education = {
         },
         {
             "title" : "Full Stack Web Development",
-            "school" : "Udacity",
-            "dates" : "January 2017 - Present",
+            "school" : "freeCodeCamp",
+            "dates" : "June 2016 - Present",
             "url" : "https://www.freecodecamp.com/"
         }
     ]
@@ -209,7 +209,7 @@ education.display = function () {
     var edu = education.schools;
     var courses = education.onlineCourses;
     
-    for (var i = 0; i < education.length; i++) {
+    for (var i = 0; i < edu.length; i++) {
         var formattedName = HTMLschoolName.replace("%data%", edu[i].name);
         var formattedDate = HTMLschoolDates.replace("%data%", edu[i].dates);
         var formattedMajor = HTMLschoolMajor.replace("%data%", edu[i].majors);
@@ -220,7 +220,15 @@ education.display = function () {
     }
 
     // online courses
+    $(".o-title").append(HTMLonlineHead);
     courses.forEach(function (c) {
+        var formattedSchool = HTMLonlineSchool.replace("%data%", c.school);
+        var formattedTitle = HTMLonlineTitle.replace("%data%", c.title);
+        var formattedDate = HTMLonlineDates.replace("%data%", c.dates);
+
+        $(".o-content").append(formattedSchool);
+        $(".o-content").append(formattedTitle);
+        $(".o-content").append(formattedDate);
         console.log(c);
     });
 };
