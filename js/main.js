@@ -122,11 +122,11 @@ var navList = [
 
 function sideBar(nav, list) {
     for (var key in nav) {
-        var formattedNav = list[key].replace("%data%", nav[key]);
+        if (nav.hasOwnProperty(key)) {
+            var formattedNav = list[key].replace("%data%", nav[key]);
 
-        $(".nav-ul").append(formattedNav);
-
-        console.log(nav[key]);
+            $(".nav-ul").append(formattedNav);
+        }
     }
 }
 sideBar(NAV_ARR, navList);
@@ -153,7 +153,9 @@ bio.display = function () {
     ];
     
     for (var key in socialList) {
-        $(".social-ul").append(socialList[key].replace("#", socialLinks[key]));
+        if (socialList.hasOwnProperty(key)) {
+            $(".social-ul").append(socialList[key].replace("#", socialLinks[key]));
+        }
     }
 };
 
@@ -175,22 +177,25 @@ function displayProjects(project) {
         $(".p-content").append(formattedImage);
     }
 
-};
+}
 
 displayProjects(projects.projects);
 
 // work exp component
 var i = 0;
 work.display = function () {
-    $(".w-title").append(HTMLworkHead)
+    $(".w-title").append(HTMLworkHead);
     work = work.jobs;
-    for (key in work) {
-        var formattedEmployer = HTMLworkEmployer.replace("%data%", work[key].employer);
-        var formattedDate = HTMLworkDates.replace("%data%", work[key].dates);
-        var formattedDescription = HTMLworkDescription.replace("%data%", work[key].description);
-        $(".w-content").append(formattedEmployer);
-        $(".w-content").append(formattedDate);
-        $(".w-content").append(formattedDescription);
+    for (var key in work) {
+        if (work.hasOwnProperty(key)) {
+            var formattedEmployer = HTMLworkEmployer.replace("%data%", work[key].employer);
+            var formattedDate = HTMLworkDates.replace("%data%", work[key].dates);
+            var formattedDescription = HTMLworkDescription.replace("%data%", work[key].description);
+
+            $(".w-content").append(formattedEmployer);
+            $(".w-content").append(formattedDate);
+            $(".w-content").append(formattedDescription);
+        }
 
     }
 };
@@ -201,14 +206,13 @@ work.display();
 education.display = function () {
     $(".e-title").append(HTMLeducationHead);
 
-    education = education.schools;
-    courses = education.onlineCourses;
+    var edu = education.schools;
+    var courses = education.onlineCourses;
     
-    var i = 0;
-    for (i = i; i < education.length; i++) {
-        var formattedName = HTMLschoolName.replace("%data%", education[i].name);
-        var formattedDate = HTMLschoolDates.replace("%data%", education[i].dates);
-        var formattedMajor = HTMLschoolMajor.replace("%data%", education[i].majors);
+    for (var i = 0; i < education.length; i++) {
+        var formattedName = HTMLschoolName.replace("%data%", edu[i].name);
+        var formattedDate = HTMLschoolDates.replace("%data%", edu[i].dates);
+        var formattedMajor = HTMLschoolMajor.replace("%data%", edu[i].majors);
 
         $(".e-content").append(formattedName);
         $(".e-content").append(formattedDate);
@@ -216,7 +220,9 @@ education.display = function () {
     }
 
     // online courses
-    $(".o-title").append(HTMLonlineHead);
+    courses.forEach(function (c) {
+        console.log(c);
+    });
 };
 
 education.display();
