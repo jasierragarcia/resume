@@ -234,3 +234,7 @@ education.display = function () {
 };
 
 education.display();
+
+
+// mapbox token
+// L.mapbox.accessToken = 'pk.eyJ1IjoianVhbi1zaWVycmEiLCJhIjoiY2l6NHBsbnNwMDR4bzMzcGdtdnE5dHY2dSJ9.4hlHK_S_CXJfa4I4VrPNKw';

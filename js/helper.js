@@ -42,5 +42,6 @@ var HTMLonlineTitle = '<p>%data%</p>';
 var HTMLonlineDates = '<p class="date-text">%data%</p>';
 var HTMLonlineURL = '<a href="#" id="online-URL">%data%</a>';
 
+
 var HTMLfooter = "<hr id='footer-hr'>";
 var HTMLfooter = '<p>Coded by <a href="#" class="credit">Juan Sierra </a></p>';
