@@ -75,11 +75,28 @@
 
             <section class="contact">
                 <div class="contact-form">
+                    <form action="https://formspree.io/jasierra.garcia@gmail.com" method="POST" class="form flex-grid">
+                        <div class="form-title">
+                            Say hi!
+                        </div>
+                        
+                        <div class="name-input">
+                            <input type="text" id="name-in" name="name" placeholder="First & Last Name" required>
+                        </div>
 
-                    <form>
-                        <input type="text" placeholder="First & Last Name" autocomplete required>
-                        <input type="email" placeholder="Your email ex: johndoe@domain.com" autocomplete required>
-                    </form>
+                        <div class="email-input">
+                            <input type="email" id="email-in" name="_replyto" placeholder="Your email ex: johndoe@mail.com" required>
+                        </div>
+
+                        <div class="message-input">
+                            <textarea name="message" id="msg-in" placeholder="Your message"></textarea>
+                        </div>
+                        
+                        <div class="button col">
+                            <button type="reset" class="reset-btn">Clear</button>
+                            <button type="submit" class="send-btn" value="Send">Send</button>
+                        </div>
+                    </form> 
 
                 </div>
                 <div class="map">
