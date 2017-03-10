@@ -10,13 +10,21 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	box-sizing: border-box;
 }
 
+html, body {
+	height: 100%;
+}
+
 /* flex box grid */
 .container {
 	max-width: 100%;
 	margin: auto;
-	height: 100vh;
+	height: 100%;
 	color: #353535;
 	font-family: 'Rubik', sans-serif;
+}
+
+a {
+	cursor: pointer !important;
 }
 
 /* helpful post
@@ -54,6 +62,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	position: fixed;
 }
 
+#name {
+	font-size: 1.3em;
+}
+
+#role {
+	font-size: 1.1em;
+}
+
 .nav-head, .nav-wrapper, .social-wrapper {
 	padding: 16px;
 	margin: 6px;
@@ -80,6 +96,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 
 .nav-link {
+	text-decoration: none;
+	color: #353535;
+	font-size: 1.1em;
+}
+
+.social-link {
 	text-decoration: none;
 	color: #353535;
 }
@@ -140,11 +162,68 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* work section */
 
 .work-exp {
+	display: flex;
+	flex-direction: column;
 	height: 100vh;
+}
+
+.w-title {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.w-content {
+	min-height: 75%;
+}
+
+#employer {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#employer:nth-child(even) {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#work-date:nth-child(odd) {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#work-description {
+	font-size: 1.1em;
+	padding-bottom: 50px;
 }
 
 /* education section */
 
 .education {
+	display: flex;
+	flex-direction: column;
 	height: 100vh;
+}
+
+.school-name {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #353535;
+}
+
+.date-text {
+	font-style: italic;
+}
+
+.e-content {
+	min-height: 40%;
+}
+
+.o-title {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.o-content {
+	text-align: right;
+	min-height: 40%;
 }
