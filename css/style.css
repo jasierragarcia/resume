@@ -181,16 +181,6 @@ a {
 	font-weight: bold;
 }
 
-#employer:nth-child(even) {
-	display: flex;
-	justify-content: flex-end;
-}
-
-#work-date:nth-child(odd) {
-	display: flex;
-	justify-content: flex-end;
-}
-
 #work-description {
 	font-size: 1.1em;
 	padding-bottom: 50px;
@@ -226,4 +216,45 @@ a {
 .o-content {
 	text-align: right;
 	min-height: 40%;
+}
+
+.form {
+	width: 50%;
+	border: 2px solid aqua;
+	flex-direction: column;
+	padding-bottom: 10%;
+}
+
+.form-title {
+	padding: 15px;
+	font-size: 1.2em;
+}
+
+.name-input, .email-input, .message-input {
+	padding: 15px;
+}
+
+#name-in, #email-in, #msg-in {
+	border: none;
+	border-bottom: 1px solid red;
+}
+
+.button {
+	padding: 15px;
+}
+
+.reset-btn, .send-btn {
+	background: none;
+	border: none;
+}
+
+.reset-btn {
+	height: 20%;
+	background: #ed6a5a;
+}
+
+.send-btn {
+	height: 20%;
+	background: #06d6a0;
+	margin: 90px;
 }
