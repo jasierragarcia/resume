@@ -7,6 +7,7 @@
   "author": "Juan Sierra <jasierra.garcia@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "maki": "^2.1.0",
     "webpack": "^2.2.1"
   }
 }

@@ -6,7 +6,7 @@ var bio = {
         "email" : "jasierra.garcia@gmail.com",
         "github" : "juan-sierra",
         "twitter" : "jasierragarcia",
-        "location" : "Leesburg, VA"
+        "location" : "San Pedro Sula, Honduras"
     },
     "welcomeMessage" : "Thank you for visiting my website",
     "skills" : [
@@ -28,15 +28,17 @@ var education = {
             "degree" : "B.S.",
             "majors" : "Computer Science",
             "dates" : "January 2017 - Present",
-            "url" : "http://www.strayer.edu/"
+            "url" : "http://www.strayer.edu/",
+            "description": "Focusing on Web Application Development"
         },
         {
            "name" : "Tuscarora High School",
             "location" : "Leesburg, VA",
             "degree" : "GED",
-            "majors" : "",
+            "majors" : "N/A",
             "dates" : "August 2010 - June 2013",
-            "url" : "https://www.lcps.org/Tuscarora" 
+            "url" : "https://www.lcps.org/Tuscarora",
+            "description": "General Studies"
         }
     ],
     "onlineCourses" : [
@@ -44,13 +46,15 @@ var education = {
             "title" : "Front End Developer Nanodegree",
             "school" : "Udacity",
             "dates" : "July 2016 - Present",
-            "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+            "url" : "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001",
+            "description": "Learn about responsive design, accessibilty, user experience, behaivor driven development by building websites"
         },
         {
             "title" : "Full Stack Web Development",
             "school" : "freeCodeCamp",
             "dates" : "June 2016 - Present",
-            "url" : "https://www.freecodecamp.com/"
+            "url" : "https://www.freecodecamp.com/",
+            "description": "Learning Full Stack Development by building projects for nonprofits"
         }
     ]
 };
@@ -67,7 +71,7 @@ var work = {
         {
             "employer" : "Chief-Technologies",
             "title" : "Intern Junior Systems Engineer",
-            "location" : "Loundoun, VA",
+            "location" : "Leesburg, VA",
             "dates" : "June 2013 - December 2016",
             "description" : "Learn programming principles, go to customer sites to perform network and IP phone installtions, assist engineers with technical tasks"
         },
@@ -236,7 +240,6 @@ education.display = function () {
 education.display();
 
 
-// mapbox token
-// L.mapbox.accessToken = 'pk.eyJ1IjoianVhbi1zaWVycmEiLCJhIjoiY2l6NHBsbnNwMDR4bzMzcGdtdnE5dHY2dSJ9.4hlHK_S_CXJfa4I4VrPNKw';
+// map
 
-// sidebar scroll on click
+$('.map').append(googleMap);

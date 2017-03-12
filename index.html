@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet'/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbmdfKNj1NRALK_smuuKgBVGOGnSlaZsY&callback=initMap"
+    async defer></script>
+
+     
 
 
 </head>
@@ -85,11 +88,11 @@
                         </div>
 
                         <div class="email-input">
-                            <input type="email" id="email-in" name="_replyto" placeholder="Your email ex: johndoe@mail.com" required>
+                            <input type="email" id="email-in" name="_replyto" placeholder="Email ex: johndoe@mail.com" required>
                         </div>
 
                         <div class="message-input">
-                            <textarea name="message" id="msg-in" placeholder="Your message"></textarea>
+                            <textarea name="message" id="msg-in" placeholder="Message"></textarea>
                         </div>
                         
                         <div class="button col">
@@ -99,15 +102,15 @@
                     </form> 
 
                 </div>
-                <div class="map">
-
-                </div>
             </section>
 
         </div>
 
         <footer class="footer flex-grid">
-
+            <div class="credit">
+                <hr id='footer-hr'>
+                Juan Sierra 2017
+            </div>
         </footer>
 
     </div>
@@ -116,7 +119,6 @@
     <script src="js/helper.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <script src="https://use.fontawesome.com/53a9240e3d.js"></script>
-    <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
 </body>
 
 </html>

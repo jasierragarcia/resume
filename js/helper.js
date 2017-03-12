@@ -16,7 +16,7 @@ var HTMLlinkedin = '<li class="social-li"><a href="#" class="social-link" id="li
 var HTMLblog = '<li class="social-li"><a href="#" class="social-link"><i class="fa fa-rss" aria-hidden="true"></i></a></li>';
 
 var HTMLprojectHead = "<h1 id='pro-title'>Projects</h1>";
-var HTMLprojectTitle = '<div id="project-list" class="p-title">%data%</div>';
+var HTMLprojectTitle = '<div id="project-list" class="p-name">%data%</div>';
 var HTMLprojectDates = '<span class="date-text">%data%</span>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%" class="p-image">';
@@ -41,7 +41,6 @@ var HTMLonlineSchool = '<a href="#" class="school-name">%data%</a>';
 var HTMLonlineTitle = '<p>%data%</p>';
 var HTMLonlineDates = '<p class="date-text">%data%</p>';
 var HTMLonlineURL = '<a href="#" id="online-URL">%data%</a>';
-
 
 
 
