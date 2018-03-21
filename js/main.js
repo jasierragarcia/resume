@@ -62,7 +62,7 @@ var education = {
 var work = {
     "jobs" : [
         {
-            "employer" : "Milestone Technologies",
+            "employer" : "MT",
             "title" : "Data Center Technician",
             "location" : "Loundoun, VA",
             "dates" : "January 2017 - Present",
