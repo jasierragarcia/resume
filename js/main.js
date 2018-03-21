@@ -64,7 +64,7 @@ var work = {
         {
             "employer" : "MT",
             "title" : "Data Center Technician",
-            "location" : "Loundoun, VA",
+            "location" : "VA, DC",
             "dates" : "January 2017 - Present",
             "description" : "Repair Facebook servers to put them back into produciton and create scripts to automate mundane tasks"
         },
